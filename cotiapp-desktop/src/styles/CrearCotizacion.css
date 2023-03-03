@@ -6,8 +6,6 @@
     align-items: center;
     flex-direction: column;
 
-    margin: auto;
-    margin-top: 15px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }

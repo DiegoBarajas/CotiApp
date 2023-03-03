@@ -52,10 +52,14 @@
     width: 50%;
     float: left;
     height: 50px;
-    background-color: #63CCD1;
+    
+    background-color: #04BEC7;
     font-size: 17.5px;
     border: none;
     font-weight: bold;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
     cursor: pointer;
 }

@@ -111,8 +111,8 @@ const Index = () => {
 
             <div className='div-index-coti-ticket'>
               <div className='div-index-btns'>
-                <button className={'btn-index btn-index-left '+classBtnC} onClick={cambiarCoti}>Cotización</button>
-                <button className={'btn-index btn-index-right '+classBtnT} onClick={cambiarTicket}>Ticket</button>
+                <button className={'btn-index '+classBtnC} onClick={cambiarCoti}>Cotización</button>
+                <button className={'btn-index '+classBtnT} onClick={cambiarTicket}>Ticket</button>
               </div>
               <CrearCotizacion display={dispCoti}/>
               <CrearTicket display={dispTicket}/>
