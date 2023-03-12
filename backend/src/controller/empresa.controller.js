@@ -1,6 +1,7 @@
 const cloudinary = require("cloudinary").v2;
 const ctrl = {};
 const Empresa = require('../models/empresas.model');
+const Usuario = require('../models/usuarios.model');
 
 /* --- --- --- --- --- --- ---  C R U D  --- --- --- --- --- --- --- */
 //Crear Empresa
@@ -154,10 +155,25 @@ ctrl.actualizar = async(req, res)=>{
 
 //Eliminar Empresa
 ctrl.eliminar = async(req, res)=>{
-    const id = req.params.id;
+    const uri = req.params.id.split(',');
 
-    const empresa = await Empresa.findByIdAndUpdate(id, {
-        activo: false
+    const usuarios = await Usuario.find();
+    const aux = [];
+
+    usuarios.map((u)=>{
+        if(u.id_empresa === uri[0]){
+            aux.push(u)
+        }
+    })
+    
+    aux.map(async(a)=>{
+        await Usuario.findByIdAndUpdate(a._id, {
+            activo: uri[1]
+        })
+    })
+    
+    const empresa = await Empresa.findByIdAndUpdate(uri[0], {
+        activo: uri[1]
     })
         .catch(err=>{
             res.json(err);

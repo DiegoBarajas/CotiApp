@@ -16,12 +16,17 @@ ctrl.crear = async(req, res)=>{
     } = req.body;
 
     cantidad.map(async(i, index)=>{
+        if(descripcion[index] === null)
+            var desc = 'Sin descripción';
+        else
+            var desc = descripcion[index];
+            
         const newItem = new Item({
             id_doc: id_doc[index],
             cantidad: cantidad[index],
             unidad: unidad[index],
             articulo: articulo[index],
-            descripcion: descripcion[index],
+            descripcion: desc,
             precioUnitario: precioUnitario[index],
             importe: importe[index],
             tipo: tipo[index]

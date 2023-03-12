@@ -45,3 +45,64 @@
     color: #004368;
 
 }
+
+.negritas{
+    font-weight: bold;
+}
+
+.div-lista-clientes-cliente-2{
+    width: 60%;
+    background-color: #63CCD1;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: -5px 5px rgba(0,0,0,.5);
+    display: flex;
+
+    margin-bottom: 20px;
+    }
+
+.div-lista-clientes-cliente-txt{
+    width: 75%;
+    height: 100%;
+}
+
+.div-lista-clientes-cliente-img{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-clientes-cliente-img{
+    display: block;
+    object-fit: contain;
+    width: 75%;
+
+    cursor: pointer;
+}
+
+.lista-clientes-cliente-img:hover{
+    filter: invert(10%);
+}
+
+.h3-lista-clientes2{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+.p-lista-clientes2{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+.margin-arritop{
+    margin-top: 20px;
+}

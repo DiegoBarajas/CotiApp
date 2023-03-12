@@ -1,0 +1,83 @@
+.div-ver-cotizacion-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+table{
+    border: 3px black solid;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.td-item-index{
+    text-align: center;
+}
+
+th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+td{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+td, th{
+    border: 2px black solid;
+}
+
+.table-item-index{
+    width: 3%;
+}
+
+.table-item-cant{
+    width: 11.17%;
+}
+
+
+.table-item-art{
+    width: 25%;
+}
+
+.table-item-desc{
+    width: 25%;
+}
+
+.borde-abajo-none{
+    border-bottom: none;
+}
+
+.borde-arriba-none{
+    border-top: none;
+}
+
+.div-btns-ver-cotizacion{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.img-ver-cotizacion-plantilla{
+    display: block;
+    width: 400px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.link-volver{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    color: #F5305C;
+}
+
+.link-volver:hover{
+    color: #cd274b;
+
+}

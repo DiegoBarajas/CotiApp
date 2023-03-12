@@ -114,7 +114,7 @@ const EditarEmpresa = () => {
             confirmButtonColor: '#F5305C'
           })
           document.getElementById('btn1').disabled = false;
-
+          return;
         })
         
 

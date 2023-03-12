@@ -145,7 +145,7 @@ const Dashboard = () => {
             return <div  className='div-dashboard-btns'>
                 <button className='boton1 btn-dashboard-izq' onClick={()=>window.location.href = '/agregar/empresa'}>Agregar Empresa</button>
                 <pre className='pre-chikito'></pre>
-                <button className='boton1 btn-dashboard-izq'>Gestionar Empresas</button>
+                <button className='boton1 btn-dashboard-izq' onClick={()=>window.location.href = '/gestionar/empresas'}>Gestionar Empresas</button>
                 <pre className='pre-chikito'></pre>
                 <button className='boton1 btn-dashboard-izq'onClick={()=>window.location.href = '/agregar/usuario'}>Agregar Usuario</button>
             </div>

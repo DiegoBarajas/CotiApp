@@ -3,7 +3,7 @@ var colors = require('colors/safe');
 const fs = require('fs');
 const generador = {};
 
-const Cotizacion = require('../models/cotizaciones.model');
+const Cotizacion = require('../models/tickets.model');
 const Usuario = require('../models/usuarios.model');
 const Cliente = require('../models/clientes.model');
 const Empresa = require('../models/empresas.model');
@@ -11,7 +11,7 @@ const Item = require('../models/items.model');
 const descargarImagen = require('./descargarImagen');
 
 
-generador.cotizacion1 = async(id, callback)=>{
+generador.ticket1 = async(id, callback)=>{
 
     const data = await getData(id);    
     
@@ -38,7 +38,7 @@ generador.cotizacion1 = async(id, callback)=>{
     });
 }
 
-generador.cotizacion2 = async(id, callback)=>{
+generador.ticket2 = async(id, callback)=>{
 
     const data = await getData(id);    
     
@@ -65,7 +65,7 @@ generador.cotizacion2 = async(id, callback)=>{
     });
 }
 
-generador.cotizacion3 = async(id, callback)=>{
+generador.ticket3 = async(id, callback)=>{
 
     const data = await getData(id);    
     
@@ -92,7 +92,7 @@ generador.cotizacion3 = async(id, callback)=>{
     });
 }
 
-generador.cotizacion4 = async(id, callback)=>{
+generador.ticket4 = async(id, callback)=>{
 
     const data = await getData(id);    
     
@@ -140,7 +140,7 @@ function generarHeader(doc, data) {
         .fillColor('black')
         .fontSize(30)
         .font('Helvetica-Bold')
-        .text('Cotización', 350, 50, {align: 'center', bold: true})
+        .text('Ticket', 350, 50, {align: 'center', bold: true})
         .fontSize(20)
         .text('Folio: ', 350, 100, {align: 'left'})
         .text('Emitida: ', 350, 120, {align: 'left'})
@@ -299,8 +299,10 @@ function generarTabla(doc, data, alt){
         .fillColor('#000')
         .font('Helvetica-Bold')
         .text('Subtotal: ' ,350, altura)
+        .text('Forma de Pago: ' , 36, altura)
         .font('Helvetica')
         .text('$'+data.cotizacion.subtotal+' MXN' ,350, altura, {align: 'right'})
+        .text(data.cotizacion.pago ,36, altura+15, {align: 'left'})
     altura+=15;
 
     doc
@@ -407,7 +409,7 @@ function generarHeader2(doc, data) {
         .fillColor('black')
         .fontSize(30)
         .font('Helvetica-Bold')
-        .text('Cotización', 350, 50, {align: 'center', bold: true})
+        .text('Ticket', 350, 50, {align: 'center', bold: true})
         .fontSize(20)
         .text('Folio: ', 350, 100, {align: 'left'})
         .text('Emitida: ', 350, 120, {align: 'left'})
@@ -552,7 +554,7 @@ function generarHeader3(doc, data) {
         .fillColor('black')
         .fontSize(30)
         .font('Helvetica-Bold')
-        .text('Cotización', 350, 50, {align: 'center', bold: true})
+        .text('Ticket', 350, 50, {align: 'center', bold: true})
         .fontSize(20)
         .text('Folio: ', 50, 180, {align: 'left'})
         .text('Emitida: ', 50, 200, {align: 'left'})
@@ -654,7 +656,7 @@ function generarHeader4(doc, data) {
         .fillColor('black')
         .fontSize(30)
         .font('Helvetica-Bold')
-        .text('Cotización', 350, 50, {align: 'center', bold: true})
+        .text('Ticket', 350, 50, {align: 'center', bold: true})
         .fontSize(20)
         .text('Folio: ', 50, 180, {align: 'left'})
         .text('Emitida: ', 50, 200, {align: 'left'})
@@ -784,7 +786,7 @@ const getData = async(id)=>{
     
     const items = [];
         aux.map((a)=>{
-            if((a.id_doc == id) && (a.tipo == 'cotizacion')){
+            if((a.id_doc == id) && (a.tipo == 'ticket')){
                 items.push(a);
             }
         });    

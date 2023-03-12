@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Titulo from '../components/Titulo';
 import axios from 'axios';
 import sweetalert2 from 'sweetalert2';
 import backend from '../constants';
 import Label from '../components/Label'
 import { PhotoProvider, PhotoView } from 'react-image-previewer';
 import BarLoader from "react-spinners/PacmanLoader";
-
 
 import '../styles/CrearCotizacion.css'
 
@@ -64,7 +62,11 @@ const CrearCotizacion = ({display}) => {
             const plantilla3 = document.getElementById('plantilla3');
             const plantilla4 = document.getElementById('plantilla4');
 
-            select.selectedIndex = seletedCliente;
+            if(select !== null){
+                select.selectedIndex = seletedCliente;
+            }
+
+            if((plantilla1 !== null) && (plantilla2 !== null) && (plantilla3 !== null) && (plantilla4 !== null))
 
             switch(seletedPlantilla){
                 case 1: plantilla1.checked = true;
@@ -79,7 +81,8 @@ const CrearCotizacion = ({display}) => {
             }
         }
 
-        setValues();
+        if(display !== 'hidden')
+            setValues();
     })
 
     useEffect(()=>{
@@ -93,12 +96,13 @@ const CrearCotizacion = ({display}) => {
         const {data} = await axios.get(backend()+'/api/cliente');
         var aux = [];
         data.map((d)=>{
-            if(d.id_usuario === usuario._id){
+            if(d.id_usuario === usuario._id && d.activo){
                 aux.push(d);
             }
         })
         setClientes(aux);
-        setIdCliente(aux[0]._id);
+        if(idCliente === '')
+            setIdCliente(aux[0]._id);
       }
 
         if(usuario._id === undefined){
@@ -108,8 +112,7 @@ const CrearCotizacion = ({display}) => {
                 getEmpresa();    
             }
             getClientes();
-        }
-            
+        }            
       
     });
 
@@ -117,99 +120,112 @@ const CrearCotizacion = ({display}) => {
     const submit = async(e)=>{
         e.preventDefault();
 
-        document.getElementById('btn1').disabled = true;
-
-        var subtotal = 0;
-        items.map((i, index)=>{
-            let importe = parseFloat(i.precioUnitario)*parseFloat(i.cantidad)
-            items[index].importe = importe;
-
-            subtotal += importe;
-        })
-
-        var importeIva = subtotal*cotizacion.iva/100;
-        const total = (subtotal + importeIva - parseFloat(cotizacion.descuento) + parseFloat(cotizacion.adicional)).toFixed(2);
-
-        const date = new Date();
-        const fecha = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
-        const folio = '000';
-
-        const formData = {
-            id_usuario: usuario._id,
-            id_cliente: idCliente,
-            color: cotizacion.color,
-            folio: folio,
-            fecha: fecha,
-            condiciones: cotizacion.condiciones,
-            subtotal: subtotal,
-            iva: cotizacion.iva,
-            importeIva: importeIva,
-            descuento: cotizacion.descuento,
-            adicional: cotizacion.adicional,
-            total: total,
-            footer: cotizacion.footer,
-            plantilla: seletedPlantilla
-        }
-
-        var {data} = await axios.post(backend()+'/api/cotizacion', formData)
-
-        if(data._id === undefined){
-            console.log(data)
+        if(clientes.length === 0){
             sweetalert2.fire({
                 icon: 'error',
                 iconColor: 'red',
-                title: 'ERROR: '+data.name,
-                text: 'Ha ocurrido un error al crear la cotización: '+data.message,
+                title: 'ERROR: Cliente no seleccionado',
+                text: 'Ha ocurrido un error al crear la cotización: No tienes ningun cliente agregado, crea uno para continuar',
                 color: 'black',
                 footer: '<p>Si el problema persiste reporte el error al correo: <a href="mailto:cotiapp.dev@gmail.com">cotiapp.dev@gmail.com</a></p>',
                 confirmButtonText: 'Aceptar',
                 confirmButtonColor: '#F5305C'
             })
         }else{
-            const id_doc = data._id;
-            const tipo = 'cotizacion';
+            document.getElementById('btn1').disabled = true;
 
-            const cantidad = [];
-            const unidad = [];
-            const articulo = [];
-            const descripcion = [];
-            const precioUnitario = [];
-            const importe = [];
-            const doc = [];
-            const tip = [];
-    
-            items.map((i)=>{
-                cantidad.push(i.cantidad);
-                unidad.push(i.unidad);
-                articulo.push(i.articulo);
-                descripcion.push(i.descripcion);
-                precioUnitario.push(i.precioUnitario);
-                importe.push(i.importe);
-                doc.push(id_doc);
-                tip.push(tipo);
+            var subtotal = 0;
+            items.map((i, index)=>{
+                let importe = parseFloat(i.precioUnitario)*parseFloat(i.cantidad)
+                items[index].importe = importe;
+
+                subtotal += importe;
             })
 
-            
-            await axios.post(backend()+'/api/item', {
-                cantidad: cantidad,
-                unidad: unidad,
-                articulo: articulo,
-                descripcion: descripcion,
-                id_doc: doc,
-                tipo: tip,
-                precioUnitario: precioUnitario,
-                importe: importe
-            }).then((data)=>{
-                window.location.href = '/cotizacion/'+id_doc;
-            })
-        }        
-        document.getElementById('btn1').disabled = false;
+            var importeIva = subtotal*cotizacion.iva/100;
+            const total = (subtotal + importeIva - parseFloat(cotizacion.descuento) + parseFloat(cotizacion.adicional)).toFixed(2);
+
+            const date = new Date();
+            const fecha = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
+            const folio = '000';
+
+            const formData = {
+                id_usuario: usuario._id,
+                id_cliente: idCliente,
+                color: cotizacion.color,
+                folio: folio,
+                fecha: fecha,
+                condiciones: cotizacion.condiciones,
+                subtotal: subtotal,
+                iva: cotizacion.iva,
+                importeIva: importeIva,
+                descuento: cotizacion.descuento,
+                adicional: cotizacion.adicional,
+                total: total,
+                footer: cotizacion.footer,
+                plantilla: seletedPlantilla
+            }
+
+            var {data} = await axios.post(backend()+'/api/cotizacion', formData)
+
+            if(data._id === undefined){
+                console.log(data)
+                sweetalert2.fire({
+                    icon: 'error',
+                    iconColor: 'red',
+                    title: 'ERROR: '+data.name,
+                    text: 'Ha ocurrido un error al crear la cotización: '+data.message,
+                    color: 'black',
+                    footer: '<p>Si el problema persiste reporte el error al correo: <a href="mailto:cotiapp.dev@gmail.com">cotiapp.dev@gmail.com</a></p>',
+                    confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#F5305C'
+                })
+            }else{
+                const id_doc = data._id;
+                const tipo = 'cotizacion';
+
+                const cantidad = [];
+                const unidad = [];
+                const articulo = [];
+                const descripcion = [];
+                const precioUnitario = [];
+                const importe = [];
+                const doc = [];
+                const tip = [];
+        
+                items.map((i)=>{
+                    cantidad.push(i.cantidad);
+                    unidad.push(i.unidad);
+                    articulo.push(i.articulo);
+                    descripcion.push(i.descripcion);
+                    precioUnitario.push(i.precioUnitario);
+                    importe.push(i.importe);
+                    doc.push(id_doc);
+                    tip.push(tipo);
+                })
+
+                
+                await axios.post(backend()+'/api/item', {
+                    cantidad: cantidad,
+                    unidad: unidad,
+                    articulo: articulo,
+                    descripcion: descripcion,
+                    id_doc: doc,
+                    tipo: tip,
+                    precioUnitario: precioUnitario,
+                    importe: importe
+                }).then((data)=>{
+                    window.location.href = '/cotizacion/'+id_doc+'/true';
+                })
+            }        
+            document.getElementById('btn1').disabled = false;
+        }
     }
 
     const seleccionarCliente = (e)=>{
         const index = e.target.selectedIndex;
-        setIdCliente(clientes[index]._id);
         setSelectedCliente(index);
+        setIdCliente(clientes[index]._id);
     }
 
     const cambiarValor = (e)=>{
@@ -269,7 +285,6 @@ const CrearCotizacion = ({display}) => {
         }
     }
 
-
     if(empresa._id === undefined)
         return <div className={'div-loading-cotizacion-main '+display}>
             <BarLoader
@@ -281,6 +296,8 @@ const CrearCotizacion = ({display}) => {
             />        
         </div>
 
+    else if(display === 'hidden')
+        return <div></div>
     else
         return (
             <div className={'div-crear-cotizacion-main '+display}>
@@ -513,7 +530,7 @@ const CrearCotizacion = ({display}) => {
 
                             />
                             <label htmlFor='plantilla1'>
-                                <img src={imgPlantillaCotizacion1} className='img-cotizacion-plantilla' alt=''/>
+                                <img src={imgPlantillaCotizacion1} className='img-cotizacion-plantilla' alt='Cargando...'/>
                             </label>
                             <PhotoProvider>
                                 <PhotoView src={imgPlantillaCotizacion1}>
@@ -534,7 +551,7 @@ const CrearCotizacion = ({display}) => {
                                 required
                             />
                             <label htmlFor='plantilla2'>
-                                <img src={imgPlantillaCotizacion2} className='img-cotizacion-plantilla' alt=''/>
+                                <img src={imgPlantillaCotizacion2} className='img-cotizacion-plantilla' alt='Cargando...'/>
                             </label>
                             <PhotoProvider>
                                 <PhotoView src={imgPlantillaCotizacion2}>
@@ -555,7 +572,7 @@ const CrearCotizacion = ({display}) => {
                                 required
                             />
                             <label htmlFor='plantilla3'>
-                                <img src={imgPlantillaCotizacion3} className='img-cotizacion-plantilla' alt=''/>
+                                <img src={imgPlantillaCotizacion3} className='img-cotizacion-plantilla' alt='Cargando...'/>
                             </label>
                             <PhotoProvider>
                                 <PhotoView src={imgPlantillaCotizacion3}>
@@ -576,7 +593,7 @@ const CrearCotizacion = ({display}) => {
                                 required
                             />
                             <label htmlFor='plantilla4'>
-                                <img src={imgPlantillaCotizacion4} className='img-cotizacion-plantilla' alt=''/>
+                                <img src={imgPlantillaCotizacion4} className='img-cotizacion-plantilla' alt='Cargando...'/>
                             </label>
                             <PhotoProvider>
                                 <PhotoView src={imgPlantillaCotizacion4}>

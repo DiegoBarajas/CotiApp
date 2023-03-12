@@ -125,6 +125,19 @@ const Login = () => {
                 window.location.href = '/home';
             }
 
+        }else if(data.error !== undefined){
+            document.getElementById('btn1').disabled = false;
+
+            sweetalert2.fire({
+                icon: 'error',
+                iconColor: 'red',
+                title: 'Error al iniciar sesión',
+                text: data.error,
+                color: 'black',
+                footer: 'Si has olvidado tu contraseña contacta con el administrador en tu empresa',
+                confirmButtonText: 'Aceptar',
+                confirmButtonColor: '#F5305C'
+            })
         }else{
             document.getElementById('btn1').disabled = false;
 

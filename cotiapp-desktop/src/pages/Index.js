@@ -103,7 +103,10 @@ const Index = () => {
               </div>
 
               <div className='div-index-header-item-lados'>
-                <button className='boton1 btn-index-clientes-margen' onClick={()=>window.location.href = '/lista/clientes'}>Ver mis clientes</button>
+                <button className=' btn-index-clientes-margen' onClick={()=>window.location.href = '/lista/clientes'}>Mis clientes</button>
+                <button className=' btn-index-clientes-margen' onClick={()=>window.location.href = '/lista/cotizaciones'}>Mis cotizaciones</button>
+                <button className=' btn-index-clientes-margen' onClick={()=>window.location.href = '/lista/tickets'}>Mis Tickets</button>
+
               </div>
 
             </div>
@@ -111,8 +114,8 @@ const Index = () => {
 
             <div className='div-index-coti-ticket'>
               <div className='div-index-btns'>
-                <button className={'btn-index '+classBtnC} onClick={cambiarCoti}>Cotización</button>
-                <button className={'btn-index '+classBtnT} onClick={cambiarTicket}>Ticket</button>
+              <button className={'btn-index btn-index-left '+classBtnC} onClick={cambiarCoti}>Cotización</button>
+                <button className={'btn-index btn-index-right '+classBtnT} onClick={cambiarTicket}>Ticket</button>
               </div>
               <CrearCotizacion display={dispCoti}/>
               <CrearTicket display={dispTicket}/>

@@ -1,0 +1,109 @@
+.div-gestionar-empresas-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-contenedor-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #63CCD1;
+    box-shadow: -5px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.div-contenedor-empresa-txt{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.div-contenedor-empresa-img{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-gestionar-empresa{
+    margin: 0px;
+    padding: 2px;
+    font-size: 15px;
+    color: black;
+}
+
+.p-gestionar-empresa2{
+    margin: 0px;
+    padding: 2px;
+    font-size: 15px;
+    color: black;
+}
+
+.p-margin-arriba{
+    margin-top: 10px;
+}
+
+.p-margin-abajo{
+    margin-bottom: 10px;
+}
+
+.img-gestionar-empresa{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+.img-gestionar-empresa-2{
+    display: block;
+    width: 50%;
+    object-fit: contain;
+    margin-right: 20px;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.img-gestionar-empresa-2:hover{
+    filter: invert(5%);
+}
+
+.color-gest-emp{
+    border: 0px;
+    width: 100px;
+    height: 30px;
+}
+
+.div-gestionar-empresa{
+    width: 80%;
+    box-shadow: -5px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+
+}
+
+.margen-left{
+    margin-left: 10px;
+}
+
+.centrar-el-boton-este{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btm-mar{
+    margin-right: 20px;
+}

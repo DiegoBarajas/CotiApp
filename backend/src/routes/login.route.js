@@ -12,10 +12,18 @@ const login = async(req, res)=>{
         if(u.correo == correo){
             bcrypt.compare(password, u.password, (err, coinciden) => {
                 if(coinciden){
-                    res.json({
-                        exito: true,
-                        id: u._id
-                    });
+                    if(u.activo){
+                        res.json({
+                            exito: true,
+                            id: u._id
+                        });
+                    }else{
+                        res.json({
+                            exito: false,
+                            error: 'Cuenta no activa',
+                            id: u._id
+                        });
+                    }
                 }else{
                     res.json({
                         exito: false
