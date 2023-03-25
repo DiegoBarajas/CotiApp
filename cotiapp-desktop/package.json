@@ -1,8 +1,11 @@
 {
   "name": "cotiapp-desktop",
-  "version": "ALPHA 1.0.0",
+  "version": "BETA 1.0.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.14",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -20,7 +23,9 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
+    "react-switch": "^7.0.0",
     "sweetalert2": "^11.7.2",
+    "toggle-switch-react": "^1.0.0",
     "wait-on": "^7.0.1",
     "web-vitals": "^2.1.4"
   },
