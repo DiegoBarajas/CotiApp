@@ -9,6 +9,7 @@ import { PhotoProvider, PhotoView } from 'react-image-previewer';
 
 
 import '../styles/Dashboard.css';
+import Graficas from '../components/Graficas';
 
 const Dashboard = () => {
     const [txtRango, setTxtRango] = useState('')
@@ -158,6 +159,14 @@ const Dashboard = () => {
         }
     }
 
+    const graficas = ()=>{
+        if(usuario.dios || usuario.admin){
+            return <Graficas/>
+        }else{
+            return
+        }
+    }
+
     if(usuario._id === undefined || empresa._id === undefined || usuarios.length === 0){
         return <Loading/>
     }else{
@@ -174,6 +183,8 @@ const Dashboard = () => {
                         btnsDesarrollador()
                     }
                 </div>
+
+                {graficas()}
                 
                 {
                     usuarios.map((u)=>{
