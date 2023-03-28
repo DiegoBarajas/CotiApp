@@ -1,6 +1,8 @@
 {
-  "name": "cotiapp-desktop",
-  "version": "BETA 1.0.0",
+  "name": "cotiapp",
+  "version": "1.0.0",
+  "author": "CotiApp",
+  "description": "Software para realización, almacenamiento y distribución de cotizaciones y recibos de compra",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -37,7 +39,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "desktop": "concurrently \"npm start\" \"wait-on http://127.0.0.1:3000 && electron .\""
+    "desktop": "concurrently \"npm start\" \"wait-on https://cotiapp.vercel.app/ && electron .\""
   },
   "eslintConfig": {
     "extends": [
