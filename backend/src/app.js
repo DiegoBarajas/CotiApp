@@ -25,6 +25,10 @@ cloudinary.config({
 //Asignacion de servidor
 app.set('port', process.env.PORT || 4000);
 
+app.get('/', (req, res)=>{
+  res.send('Backend de CotiApp');
+})
+
 //Rutas
 app.use('/api/empresa', require('./routes/empresa.route'));
 app.use('/api/usuario', require('./routes/usuario.route'));
