@@ -69,7 +69,7 @@ const descargar = async(req, res)=>{
 
         setTimeout(()=>{
             res.sendFile(id+'.pdf', {root: 'src/pdf'})
-        }, 500);
+        }, 2000);
 
 
 }
