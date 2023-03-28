@@ -69,9 +69,7 @@ const descargar = async(req, res)=>{
 
         setTimeout(()=>{
             res.sendFile(id+'.pdf', {root: 'src/pdf'})
-        }, 1000);
-
-
+        }, 2000);
 }
 
 const borrar = async(req, res)=>{
