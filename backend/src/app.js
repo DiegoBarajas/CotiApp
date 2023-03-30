@@ -41,5 +41,9 @@ app.use('/api/enviar/cotizacion', require('./routes/enviarCotizaciones.route'));
 app.use('/api/enviar/ticket', require('./routes/enviarTickets.route'));
 app.use('/descargar', require('./routes/download.route'));
 
+app.get('/setup.exe', (req, res)=>{
+  res.sendFile('setup.exe', {root: 'src'})
+})
+
 
 module.exports = app;
