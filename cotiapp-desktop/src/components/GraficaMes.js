@@ -11,7 +11,6 @@ import {
 import { Bar } from 'react-chartjs-2';
 
 const GraficaMes = () => {
-
     const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
     const date = new Date();
     const primeroMes = new Date();

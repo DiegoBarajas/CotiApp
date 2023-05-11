@@ -172,6 +172,7 @@ const EditarOtroUsuario = () => {
                       className='input-editar-empresa-completo btn-reiniciar-pass'
                       type='button'
                       value='Reiniciar Contraseña'
+                      disabled={!usuario.activo}
 
                       onClick={resetPassword}
                     />

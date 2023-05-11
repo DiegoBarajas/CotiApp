@@ -37,6 +37,22 @@
     margin-top: 5px;
 }
 
+.btn-reiniciar-pass:disabled{
+    background-color: #84122a;
+    cursor:default;
+    color: rgb(227, 227, 227);
+    height: 40px;
+    margin-top: 5px;
+}
+
+.btn-reiniciar-pass:disabled:hover{
+    background-color: #84122a;
+    cursor:default;
+    color: rgb(227, 227, 227);
+    height: 40px;
+    margin-top: 5px;
+}
+
 .btn-reiniciar-pass:hover{
     background-color: #ca1d42;
 }
