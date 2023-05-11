@@ -18,6 +18,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
+  
   mainWindow.loadURL('https://cotiapp.vercel.app/')
 
   // Open the DevTools.

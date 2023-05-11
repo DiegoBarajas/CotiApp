@@ -1,19 +1,12 @@
 const nodemailer = require('nodemailer');
 const transporter = require('./transporter');
 
-
-const sendMail = async(to, subject, html, dir, callback)=>{
+const sendTextMail = async(to, subject, html, callback)=>{
     const message = {
         from: process.env.userGMail, // Sender address
         to: to,         // List of recipients
         subject: subject, // Subject line
-        html: html,
-        attachments: [
-          {
-              filename: dir,
-              path: 'src/pdf/'+dir
-          }
-      ]
+        html: html
     };
     
     await transporter.sendMail(message, function(err, info) {
@@ -28,4 +21,4 @@ const sendMail = async(to, subject, html, dir, callback)=>{
 
 }
 
-module.exports = sendMail;
+module.exports = sendTextMail;

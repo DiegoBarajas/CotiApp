@@ -167,6 +167,11 @@ const Dashboard = () => {
         }
     }
 
+    const colorTarjeta = (u)=>{
+        if (u.activo) return '#63CCD1'
+        else return '#4A9A9E'
+    }
+
     if(usuario._id === undefined || empresa._id === undefined || usuarios.length === 0){
         return <Loading/>
     }else{
@@ -185,17 +190,23 @@ const Dashboard = () => {
                 </div>
 
                 {graficas()}
+
+                <h2 style={{
+                    width: "100%",
+                    marginLeft: "18.5%"
+                }}>Miembros de mi empresa:</h2>
                 
                 {
                     usuarios.map((u)=>{
-                        return <div className='div-map-usuarios' onClick={()=>{window.location.href = '/editar/usuario/'+u._id}}>
+                        return <div className='div-map-usuarios' style={{backgroundColor: colorTarjeta(u)}} onClick={()=>{window.location.href = '/editar/usuario/'+u._id}}>
                             {yo(u)}
                             <p className='p-dashboard-usuario'>Correo: <a className='span-dashboard-usuario a-dashboard' href={'mailto:'+u.correo}>{u.correo} </a></p>
                             <p className='p-dashboard-usuario'>Telefono: <a className='span-dashboard-usuario a-dashboard' href={'callto:'+u.telefono}>{u.telefono}</a></p>
                             <p className='p-dashboard-usuario'>Rango: <span className='span-dashboard-usuario'>{rango(u)}</span></p>
                             <p className='p-dashboard-usuario'>¿Puede cotizar? <span className='span-dashboard-usuario'>{puedes(u.cotizaciones)}</span></p>
                             <p className='p-dashboard-usuario'>¿Puede hacer tickets? <span className='span-dashboard-usuario'>{puedes(u.tickets)}</span></p>
-
+                            <p className='p-dashboard-usuario'>Activo <span className='span-dashboard-usuario'>{puedes(u.activo)}</span></p>
+                            
                         </div>
                     })
                 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import backend from '../constants';
-import AgregarCliente from './AgregarCliente';
+import AgregarCliente from '../pages/AgregarCliente';
 
 import '../styles/Navbar.css';
 

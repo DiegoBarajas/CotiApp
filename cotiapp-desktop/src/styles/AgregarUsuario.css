@@ -28,3 +28,15 @@
 .option-agregar-usuario{
     font-size: 15px;
 }
+
+.btn-reiniciar-pass{
+    background-color: #DC1F49;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.btn-reiniciar-pass:hover{
+    background-color: #ca1d42;
+}
