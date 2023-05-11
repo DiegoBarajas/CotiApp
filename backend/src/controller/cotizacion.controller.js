@@ -1,5 +1,6 @@
 const ctrl = {};
 const Cotizacion = require('../models/cotizaciones.model');
+const Usuario = require('../models/usuarios.model');
 
 /* --- --- --- --- --- --- ---  C R U D  --- --- --- --- --- --- --- */
 //Crear Cotizacion
@@ -21,9 +22,12 @@ ctrl.crear = async(req, res)=>{
         plantilla
     } = req.body;
 
+    const usuario = await Usuario.findById(id_usuario);
+
     const newCotizacion = new Cotizacion({
         id_usuario,
         id_cliente,
+        id_empresa: usuario.id_empresa,
         color,
         folio,
         fecha,

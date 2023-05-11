@@ -40,9 +40,6 @@ const GraficaMes = () => {
 
     const semanaActual = getWeek(date);
     const primeraSemanaMes = getWeek(primeroMes);
-
-    console.log('Primera semana del mes: '+primeraSemanaMes);
-    console.log('Semana actual: '+semanaActual);
     
     const [semanas, setSemanas] = useState([])
     const [tickets, setTickets] = useState([2, 8, 4, 9])
@@ -56,7 +53,10 @@ const GraficaMes = () => {
                 setSemanas(aux.push('Semana '+(i+1)))
                 setSemanas(aux);
             }
+            console.log(semanas);
         }
+
+        
 
         if(semanas.length === 0)
             getSemanas();
