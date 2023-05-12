@@ -1,6 +1,7 @@
 const ctrl = {};
 const Cotizacion = require('../models/tickets.model');
 const Usuario = require('../models/usuarios.model');
+const Empresa = require('../models/empresas.model');
 
 /* --- --- --- --- --- --- ---  C R U D  --- --- --- --- --- --- --- */
 //Crear Cotizacion
@@ -9,7 +10,6 @@ ctrl.crear = async(req, res)=>{
         id_usuario,
         id_cliente,
         color,
-        folio,
         fecha,
         condiciones,
         subtotal,
@@ -24,6 +24,7 @@ ctrl.crear = async(req, res)=>{
     } = req.body;
 
     const usuario = await Usuario.findById(id_usuario);
+    const empresa = await Empresa.findById(usuario.id_empresa);
 
     var impIva = importeIva.toFixed(2);
 
@@ -32,7 +33,7 @@ ctrl.crear = async(req, res)=>{
         id_cliente,
         id_empresa: usuario.id_empresa,
         color,
-        folio,
+        folio: empresa.folio_ticket,
         fecha,
         condiciones,
         subtotal,
@@ -55,6 +56,9 @@ ctrl.crear = async(req, res)=>{
         });
 
     if(!error){
+        await Empresa.findByIdAndUpdate(usuario.id_empresa, {
+            folio_ticket: empresa.folio_ticket+1
+        })
         res.json(newCotizacion);        
     }
 }

@@ -1,6 +1,7 @@
 const ctrl = {};
 const Cotizacion = require('../models/cotizaciones.model');
 const Usuario = require('../models/usuarios.model');
+const Empresa = require('../models/empresas.model');
 
 /* --- --- --- --- --- --- ---  C R U D  --- --- --- --- --- --- --- */
 //Crear Cotizacion
@@ -9,7 +10,6 @@ ctrl.crear = async(req, res)=>{
         id_usuario,
         id_cliente,
         color,
-        folio,
         fecha,
         condiciones,
         subtotal,
@@ -25,13 +25,14 @@ ctrl.crear = async(req, res)=>{
     var impIva = importeIva.toFixed(2);
 
     const usuario = await Usuario.findById(id_usuario);
+    const empresa = await Empresa.findById(usuario.id_empresa);
 
     const newCotizacion = new Cotizacion({
         id_usuario,
         id_cliente,
         id_empresa: usuario.id_empresa,
         color,
-        folio,
+        folio: empresa.folio_coti,
         fecha,
         condiciones,
         subtotal,
@@ -53,6 +54,9 @@ ctrl.crear = async(req, res)=>{
         });
 
     if(!error){
+        await Empresa.findByIdAndUpdate(usuario.id_empresa, {
+            folio_coti: empresa.folio_coti+1
+        })
         res.json(newCotizacion);        
     }
 }
