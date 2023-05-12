@@ -96,7 +96,7 @@ const AgregarEmpresa = () => {
             icon: 'success',
             title: '¡Empresa agregada exitosamente! :D'
           });
-
+          window.location.reload();
           setNewEmpresa({})
           
         }else{

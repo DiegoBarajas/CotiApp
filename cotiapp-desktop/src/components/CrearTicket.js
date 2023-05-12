@@ -628,7 +628,7 @@ const CrearTicket = ({display}) => {
                     
                     <br/>
                     <br/>
-                    <button className='boton1' id='btn1'>Crear Cotización</button>
+                    <button className='boton1' id='btn1'>Crear Ticket</button>
 
                     <br/>                
                     <br/>

@@ -10,18 +10,8 @@ const GraficaDia = () => {
     const [coti, setCoti] = useState([]);
     const [tick, setTick] = useState([]);
     const [usuario, setUsuario] = useState({});
-
+    const date = new Date()
     
-    useEffect(()=>{
-      const getData = async()=>{
-        const {data} = await axios.get(backend()+'/api/cotizacion');
-
-        console.log(data);
-      }
-
-      if(coti.length === 0) getData();
-    })
-
     useEffect(()=>{
       const getUsuario = async()=>{
         const {data} = await axios.get(backend()+'/api/usuario/'+localStorage.getItem('id'))
@@ -41,11 +31,57 @@ const GraficaDia = () => {
             return;
           })
         setUsuario(data);
-        console.log(data);
       }
 
       if(usuario._id === undefined)getUsuario();
     });
+
+    useEffect(()=>{
+      const getCoti = async()=>{
+        const {data} = await axios.get(backend()+'/api/cotizacion');
+
+        const auxC = [];
+
+        const diaHoy = date.getDate();         
+        const mesHoy = date.getMonth()+1;         
+        const yearHoy = date.getFullYear();   
+        
+        const fechaHoy = `${diaHoy}/${mesHoy}/${yearHoy}`;
+
+        data.map((d)=>{
+          if((d.fecha === fechaHoy) && (d.id_empresa == usuario.id_empresa)){
+            auxC.push(d);
+          }
+        });
+        setCoti(auxC);
+        console.log(auxC);
+      }
+
+      const getTick = async()=>{
+        const {data} = await axios.get(backend()+'/api/ticket');
+
+        const auxT = [];
+
+        const diaHoy = date.getDate();         
+        const mesHoy = date.getMonth()+1;         
+        const yearHoy = date.getFullYear();   
+        
+        const fechaHoy = `${diaHoy}/${mesHoy}/${yearHoy}`;
+
+        data.map((d)=>{
+          if((d.fecha === fechaHoy) && (d.id_empresa == usuario.id_empresa)){
+            auxT.push(d);
+          }
+        });
+        setTick(auxT);
+        console.log(auxT);
+      }
+
+      if(coti.length === 0) getCoti();
+      if(tick.length === 0) getTick();
+    })
+
+    
 
     ChartJS.register(ArcElement, Tooltip, Legend);
 

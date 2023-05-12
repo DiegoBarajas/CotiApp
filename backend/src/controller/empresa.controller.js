@@ -17,7 +17,7 @@ ctrl.crear = async(req, res)=>{
         result = {url: 'https://res.cloudinary.com/dnrfswnwp/image/upload/v1675969168/empresas/1675969167546.jpg'}
     })
 
-    const { 
+    const {
             nombre,
             correo,
             telefono,
@@ -29,6 +29,8 @@ ctrl.crear = async(req, res)=>{
             condiciones,
             footer
     } = req.body;
+
+    console.log(color);
 
     const newEmpresa = new Empresa({
         nombre,
