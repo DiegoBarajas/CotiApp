@@ -30,7 +30,10 @@ ctrl.crear = async(req, res)=>{
             footer
     } = req.body;
 
-    console.log(color);
+    if(color == 'undefined')
+        clr = "#000000"
+    else
+        clr = color;
 
     const newEmpresa = new Empresa({
         nombre,
@@ -41,7 +44,7 @@ ctrl.crear = async(req, res)=>{
         folio_coti,    
         folio_ticket,
         condiciones,
-        color,
+        color: clr,
         footer,
         img: result.url
     });

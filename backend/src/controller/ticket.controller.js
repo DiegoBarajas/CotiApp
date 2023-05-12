@@ -25,6 +25,8 @@ ctrl.crear = async(req, res)=>{
 
     const usuario = await Usuario.findById(id_usuario);
 
+    var impIva = importeIva.toFixed(2);
+
     const newCotizacion = new Cotizacion({
         id_usuario,
         id_cliente,
@@ -35,7 +37,7 @@ ctrl.crear = async(req, res)=>{
         condiciones,
         subtotal,
         iva,
-        importeIva,
+        importeIva: impIva,
         descuento,
         adicional,
         total,

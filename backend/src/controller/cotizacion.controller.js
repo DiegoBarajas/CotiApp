@@ -22,6 +22,8 @@ ctrl.crear = async(req, res)=>{
         plantilla
     } = req.body;
 
+    var impIva = importeIva.toFixed(2);
+
     const usuario = await Usuario.findById(id_usuario);
 
     const newCotizacion = new Cotizacion({
@@ -34,7 +36,7 @@ ctrl.crear = async(req, res)=>{
         condiciones,
         subtotal,
         iva,
-        importeIva,
+        importeIva: impIva,
         descuento,
         adicional,
         total,

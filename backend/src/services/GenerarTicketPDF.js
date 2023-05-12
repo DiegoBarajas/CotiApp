@@ -340,7 +340,7 @@ function generarTabla(doc, data, alt){
         .font('Helvetica-Bold')
         .fontSize(20)
         .fillColor(data.cotizacion.color)
-        .text('TOTAL: ' ,350, altura)
+        .text('TOTAL: ' ,275, altura)
         .font('Helvetica')
         .text('$'+data.cotizacion.total+' MXN' ,350, altura, {align: 'right'})
         .fillColor('black')
