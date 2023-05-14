@@ -54,7 +54,6 @@ const GraficaDia = () => {
           }
         });
         setCoti(auxC);
-        console.log(auxC);
       }
 
       const getTick = async()=>{
@@ -74,7 +73,6 @@ const GraficaDia = () => {
           }
         });
         setTick(auxT);
-        console.log(auxT);
       }
 
       if(coti.length === 0) getCoti();
