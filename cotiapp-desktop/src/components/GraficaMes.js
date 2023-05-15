@@ -13,11 +13,12 @@ import sweetalert2 from 'sweetalert2';
 import axios from 'axios';
 import backend from '../constants';
 
+var date = new Date();
+var primeroMes = new Date();
+primeroMes.setDate(1);
+
 const GraficaMes = () => {
     const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-    const date = new Date();
-    const primeroMes = new Date();
-    primeroMes.setDate(1);
 
     ChartJS.register(
         CategoryScale,
@@ -47,6 +48,8 @@ const GraficaMes = () => {
     const [semanas, setSemanas] = useState([]);
     const [tickets, setTickets] = useState([]);
     const [coti, setCoti] = useState([]);
+    const [todoTick, setTodoTick] = useState([]);
+    const [todoCoti, setTodoCoti] = useState([]);
     const [usuario, setUsuario] = useState({});
     const [cantSemanas, setCantSemanas] = useState(0);
     const labels = semanas;
@@ -91,73 +94,106 @@ const GraficaMes = () => {
     });
 
     useEffect(()=>{
+      const getTodoC = async()=>{
+          const {data} = await axios.get(backend()+'/api/cotizacion');
+          setTodoCoti(data);
+      }
+
+      const getTodoT = async()=>{
+        const {data} = await axios.get(backend()+'/api/ticket');
+        setTodoTick(data);
+      }
+
+      if((usuario._id !== undefined) && (todoCoti.length === 0)) getTodoC();
+      if((usuario._id !== undefined) && (todoTick.length === 0)) getTodoT();
+    })
+
+    useEffect(()=>{
       const getCotis = async()=>{
-        const {data} = await axios.get(backend()+'/api/cotizacion');
-        const aux = [0,0,0,0,0,0,0,0,0,0,0];
+        const data = todoCoti;
+        if(todoCoti.length > 0){
+          const aux = [0,0,0,0,0,0,0,0,0,0,0];
 
-        data.map((d)=>{
-          const fechaData = d.fecha.split('/');
-          const dateD = new Date();
-          dateD.setFullYear(fechaData[2]);
-          dateD.setMonth(fechaData[1]-1);
-          dateD.setDate(fechaData[0]);
-
-          if(d.id_empresa === usuario.id_empresa){
-            const semanaHoy = getWeek(date);
-            const semanaData = getWeek(dateD);
-
-            if(date.getFullYear() === dateD.getFullYear()){
-              for(let i=0; i<cantSemanas; i++){
-
-                if(semanaData+i === semanaHoy){
-                  aux[cantSemanas-i-1] = aux[cantSemanas-i-1]+1;
+          data.map((d)=>{
+            const fechaData = d.fecha.split('/');
+            const dateD = new Date();
+            dateD.setFullYear(fechaData[2]);
+            dateD.setMonth(fechaData[1]-1);
+            dateD.setDate(fechaData[0]);
+  
+            if(d.id_empresa === usuario.id_empresa){
+              const semanaHoy = getWeek(date);
+              const semanaData = getWeek(dateD);
+  
+              if(date.getFullYear() === dateD.getFullYear()){
+                for(let i=0; i<cantSemanas; i++){
+  
+                  if(semanaData+i === semanaHoy){
+                    aux[cantSemanas-i-1] = aux[cantSemanas-i-1]+1;
+                  }
+                
                 }
-              
               }
-            }
-            
-          } 
-        });
-
-        setCoti(aux)
+              
+            } 
+          });
+  
+          setCoti(aux)
+        }
       }
 
       const getTickets = async()=>{
-        const {data} = await axios.get(backend()+'/api/ticket');
-        const aux = [0,0,0,0,0,0,0,0,0,0,0];
+        const data = todoTick;
+        if(todoTick.length > 0){
+          const aux = [0,0,0,0,0,0,0,0,0,0,0];
 
-        data.map((d)=>{
-          const fechaData = d.fecha.split('/');
-          const dateD = new Date();
-          dateD.setFullYear(fechaData[2]);
-          dateD.setMonth(fechaData[1]-1);
-          dateD.setDate(fechaData[0]);
-
-          if(d.id_empresa === usuario.id_empresa){
-            const semanaHoy = getWeek(date);
-            const semanaData = getWeek(dateD);
-
-            if(date.getFullYear() === dateD.getFullYear()){
-              for(let i=0; i<cantSemanas; i++){
-
-                if(semanaData+i === semanaHoy){
-                  aux[cantSemanas-i-1] = aux[cantSemanas-i-1]+1;
+          data.map((d)=>{
+            const fechaData = d.fecha.split('/');
+            const dateD = new Date();
+            dateD.setFullYear(fechaData[2]);
+            dateD.setMonth(fechaData[1]-1);
+            dateD.setDate(fechaData[0]);
+  
+            if(d.id_empresa === usuario.id_empresa){
+              const semanaHoy = getWeek(date);
+              const semanaData = getWeek(dateD);
+  
+              if(date.getFullYear() === dateD.getFullYear()){
+                for(let i=0; i<cantSemanas; i++){
+  
+                  if(semanaData+i === semanaHoy){
+                    aux[cantSemanas-i-1] = aux[cantSemanas-i-1]+1;
+                  }
+                
                 }
-              
               }
-            }
-            
-          } 
-        });
-
-        setTickets(aux)
+              
+            } 
+          });
+  
+          setTickets(aux)
+        }
       }
 
-      if ((usuario._id !== undefined) && (coti.length === 0)){
-        getCotis();
-        getTickets();
-      }
+      if (coti.length === 0) getCotis(); 
+      if (tickets.length === 0) getTickets(); 
     })
+
+    const setValueDate = ()=>{
+      const d = date.getDate().toString();
+      const m = (date.getMonth()+1).toString();
+      const year = date.getFullYear().toString();
+
+      const dia = d.length === 1 ?
+                  '0'+d :
+                  d;
+
+      const mes = m.length === 1 ?
+                  '0'+m :
+                  m;
+
+      return(year+'-'+mes+'-'+dia);
+    }
 
     const data = {
         labels,
@@ -175,8 +211,34 @@ const GraficaMes = () => {
         ],
       };
 
+      const cambiarFecha = (e)=>{
+        const fecha = e.target.value.split('-');
+        const newDate = new Date();
+
+        //getFecha();
+        setSemanas([])
+  
+        newDate.setDate(fecha[2]);
+        newDate.setMonth(fecha[1]-1);
+        newDate.setFullYear(fecha[0]);
+  
+        primeroMes.setMonth(fecha[1]);
+        date = newDate;
+
+        setCoti([]);
+        setTickets([]);
+      }
+
     return (
-        <Bar options={options} data={data} />
+        <div style={{flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <Bar options={options} data={data} style={{width: '120%', height: '90%', marginBottom: '20px'}} />
+          <input
+            type='date'
+            style={{width: '100%', minHeight: '30px'}}
+            onChange={cambiarFecha}
+            value={setValueDate()}
+          />
+        </div>
     )
 }
 
