@@ -13,6 +13,7 @@ import sweetalert2 from 'sweetalert2';
 import axios from 'axios';
 import backend from '../constants';
 
+const estaFecha = new Date();
 var date = new Date();
 var primeroMes = new Date();
 primeroMes.setDate(1);
@@ -30,31 +31,33 @@ const GraficaMes = () => {
         Legend
       );
 
-    const options = {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top',
-          },
-          title: {
-            display: true,
-            text: `Este mes (${meses[date.getMonth()]} ${date.getFullYear()})`,
-          },
-        },
-      };
+      
+      const semanaActual = getWeek(date);
+      const primeraSemanaMes = getWeek(primeroMes);
+      
+      const [semanas, setSemanas] = useState([]);
+      const [tickets, setTickets] = useState([]);
+      const [coti, setCoti] = useState([]);
+      const [todoTick, setTodoTick] = useState([]);
+      const [todoCoti, setTodoCoti] = useState([]);
+      const [usuario, setUsuario] = useState({});
+      const [fechaMes, setFechaMes] = useState('')
+      const labels = semanas;
 
-    const semanaActual = getWeek(date);
-    const primeraSemanaMes = getWeek(primeroMes);
-    
-    const [semanas, setSemanas] = useState([]);
-    const [tickets, setTickets] = useState([]);
-    const [coti, setCoti] = useState([]);
-    const [todoTick, setTodoTick] = useState([]);
-    const [todoCoti, setTodoCoti] = useState([]);
-    const [usuario, setUsuario] = useState({});
-    const labels = semanas;
-
-    useEffect(()=>{
+      const options = {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: fechaMes,
+            },
+          },
+        };
+      
+      useEffect(()=>{
       const getUsuario = async()=>{
         const {data} = await axios.get(backend()+'/api/usuario/'+localStorage.getItem('id'))
           .catch((err)=>{
@@ -176,7 +179,7 @@ const GraficaMes = () => {
           setTickets(aux)
         }
       }
-
+      getFechaMes();
       if (coti.length === 0) getCotis(); 
       if (tickets.length === 0) getTickets(); 
     })
@@ -212,6 +215,18 @@ const GraficaMes = () => {
           },
         ],
       };
+
+      const getFechaMes = ()=>{
+        const ultimoDiaSemana = obtenerUltimoDiaSemana(date.getFullYear(), getWeek(date));
+        const currentDate = `${ultimoDiaSemana.getDate()+1}-${ultimoDiaSemana.getMonth()+1}-${ultimoDiaSemana.getFullYear()}`;
+        const firstDate = `${primeroMes.getDate()}-${primeroMes.getMonth()+1}-${primeroMes.getFullYear()}`;
+
+        if((estaFecha.getMonth() === date.getMonth()) && (estaFecha.getFullYear() === date.getFullYear())){
+          setFechaMes(`Este mes (del ${firstDate} al ${currentDate})`)
+        }else{
+          setFechaMes(`Del ${firstDate} al ${currentDate}`)
+        }
+      }
 
       const cambiarFecha = (e)=>{
         const fecha = e.target.value.split('-');
@@ -252,4 +267,10 @@ function getWeek(date) {
     const week = Math.ceil(diff / (1000 * 60 * 60 * 24 * 7));
     
     return week;
+}
+
+function obtenerUltimoDiaSemana(ano, semana) {
+  var primerDia = new Date(ano, 0, (semana - 1) * 7);
+  var ultimoDia = new Date(primerDia.getFullYear(), primerDia.getMonth(), primerDia.getDate() + 6);
+  return ultimoDia;
 }

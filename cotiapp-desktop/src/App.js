@@ -24,6 +24,8 @@ import GestionarEmpresas from './pages/GestionarEmpresas';
 import EditarOtraEmpresa from './pages/EditarOtraEmpresa';
 import VerTicket from './pages/VerTicket';
 import ListaTickets from './pages/ListaTickets';
+import GestionarUsurios from './pages/GestionarUsurios';
+import EditarUsuarioGlobal from './pages/EditarUsuarioGlobal';
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path='/gestionar/empresas' element={<DiosRoute><GestionarEmpresas/></DiosRoute>}/>
           <Route path='/agregar/empresa' element={<DiosRoute><AgregarEmpresa/></DiosRoute>}/>
           <Route path='/agregar/usuario' element={<AdminRoute><AgregarUsuario/></AdminRoute>}/>
+          <Route path='/gestionar/usuarios' element={<AdminRoute><GestionarUsurios/></AdminRoute>}/>
+          <Route path='/editar/usuario/global/:id' element={<AdminRoute><EditarUsuarioGlobal/></AdminRoute>}/>
           <Route path='/lista/clientes' element={<LoggedRoute><ListaClientes/></LoggedRoute>} />
           <Route path='/lista/cotizaciones' element={<LoggedRoute><ListaCotizaciones/></LoggedRoute>} />
           <Route path='/lista/tickets' element={<LoggedRoute><ListaTickets/></LoggedRoute>} />

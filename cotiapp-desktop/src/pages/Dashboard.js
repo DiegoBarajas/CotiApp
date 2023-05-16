@@ -131,7 +131,6 @@ const Dashboard = () => {
             return 'Moderador'
         else
             return 'Usuario Normal'
-        
     }
 
     const puedes = (b)=>{
@@ -149,6 +148,9 @@ const Dashboard = () => {
                 <button className='boton1 btn-dashboard-izq' onClick={()=>window.location.href = '/gestionar/empresas'}>Gestionar Empresas</button>
                 <pre className='pre-chikito'></pre>
                 <button className='boton1 btn-dashboard-izq'onClick={()=>window.location.href = '/agregar/usuario'}>Agregar Usuario</button>
+                <pre className='pre-chikito'></pre>
+                <button className='boton1 btn-dashboard-izq'onClick={()=>window.location.href = '/gestionar/usuarios'}>Gestionar Usuarios</button>
+            
             </div>
         }else if(usuario.admin){
             return <div  className='div-dashboard-btns'>
