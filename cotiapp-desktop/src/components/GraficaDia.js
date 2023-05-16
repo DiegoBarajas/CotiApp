@@ -180,7 +180,7 @@ const GraficaDia = () => {
       }
 
       const mostrarGrafica = ()=>{
-        if(coti.length === 0 && tick.length === 0) return <p style={{fontSize: 12,fontWeight:'bold', paddingTop: '50px', paddingBottom: '50px'}}>No hay registros el día {`${date.getDate()} de ${meses[date.getMonth()]} del ${date.getFullYear()}`}</p>
+        if(coti.length === 0 && tick.length === 0) return <p style={{fontSize: 12,fontWeight:'bold', paddingTop: '50px', paddingBottom: '50px', textAlign: 'center'}}>No hay registros el día <br/>{`${date.getDate()} de ${meses[date.getMonth()]} del ${date.getFullYear()}`}</p>
         else return <Pie data={data} options={options} style={{marginBottom: '10px'}}/>
 
       }
