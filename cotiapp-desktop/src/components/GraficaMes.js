@@ -16,6 +16,7 @@ import backend from '../constants';
 var date = new Date();
 var primeroMes = new Date();
 primeroMes.setDate(1);
+var cantSemanas = 0;
 
 const GraficaMes = () => {
     const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
@@ -51,7 +52,6 @@ const GraficaMes = () => {
     const [todoTick, setTodoTick] = useState([]);
     const [todoCoti, setTodoCoti] = useState([]);
     const [usuario, setUsuario] = useState({});
-    const [cantSemanas, setCantSemanas] = useState(0);
     const labels = semanas;
 
     useEffect(()=>{
@@ -86,11 +86,12 @@ const GraficaMes = () => {
                 setSemanas(aux);
             }
 
-            setCantSemanas(semanas.length);
+            cantSemanas = semanas.length;
         }
 
-        if(semanas.length === 0) 
-        getSemanas();
+        if(semanas.length === 0){
+          getSemanas();
+        } 
     });
 
     useEffect(()=>{
@@ -111,8 +112,9 @@ const GraficaMes = () => {
     useEffect(()=>{
       const getCotis = async()=>{
         const data = todoCoti;
+
         if(todoCoti.length > 0){
-          const aux = [0,0,0,0,0,0,0,0,0,0,0];
+          const aux = [0,0,0,0,0,0,0,0];
 
           data.map((d)=>{
             const fechaData = d.fecha.split('/');
@@ -124,10 +126,10 @@ const GraficaMes = () => {
             if(d.id_empresa === usuario.id_empresa){
               const semanaHoy = getWeek(date);
               const semanaData = getWeek(dateD);
-  
+
               if(date.getFullYear() === dateD.getFullYear()){
                 for(let i=0; i<cantSemanas; i++){
-  
+                  
                   if(semanaData+i === semanaHoy){
                     aux[cantSemanas-i-1] = aux[cantSemanas-i-1]+1;
                   }
@@ -222,7 +224,7 @@ const GraficaMes = () => {
         newDate.setMonth(fecha[1]-1);
         newDate.setFullYear(fecha[0]);
   
-        primeroMes.setMonth(fecha[1]);
+        primeroMes.setMonth(fecha[1]-1);
         date = newDate;
 
         setCoti([]);
