@@ -20,7 +20,8 @@ function createWindow () {
   // and load the index.html of the app.
   
   //mainWindow.loadURL('https://cotiapp.vercel.app/');
-  mainWindow.loadURL('http://localhost:3000')
+  mainWindow.webContents.setZoomFactor(0.8);
+  mainWindow.loadURL('http://localhost:3000');
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

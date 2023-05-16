@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/Graficas.css';
 import GraficaDia from './GraficaDia';
 import GraficaMes from './GraficaMes';
+import GraficaCotizacionesTickets from './GraficaCotizacionesTickets';
 
 const Graficas = () => {
 
@@ -18,9 +19,14 @@ const Graficas = () => {
 
     return (
         <div className='div-graficas-main'>
+            <div className='div-graficas-item'>
+                <GraficaDia/>
+                <GraficaMes/>
+            </div>
 
-            <GraficaDia/>
-            <GraficaMes/>
+            <div className='div-graficas-item'>
+                <GraficaCotizacionesTickets/>
+            </div>
         </div>
     )
 }
