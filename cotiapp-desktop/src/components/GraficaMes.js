@@ -251,7 +251,7 @@ const GraficaMes = () => {
           <Bar options={options} data={data} style={{width: '120%', height: '90%', marginBottom: '20px'}} />
           <input
             type='date'
-            style={{width: '100%', minHeight: '30px'}}
+            style={{width: '80%', minHeight: '30px'}}
             onChange={cambiarFecha}
             value={setValueDate()}
           />

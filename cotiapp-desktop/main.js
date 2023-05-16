@@ -3,9 +3,9 @@ const path = require('path')
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 900,
+    width: 1000,
     height: 600,
-    minWidth: 900,
+    minWidth: 1000,
     minHeight: 600,
     title: 'CotiApp',
     autoHideMenuBar: true,

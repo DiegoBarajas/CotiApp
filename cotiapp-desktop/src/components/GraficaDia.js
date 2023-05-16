@@ -191,7 +191,7 @@ const GraficaDia = () => {
           <input
             type='date'
             value={setValueDate()}
-            style={{width: '100%', minHeight: '30px'}}
+            style={{width: '80%', minHeight: '30px'}}
             onChange={cambiarFecha}
           />
         </div>
