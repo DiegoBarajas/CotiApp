@@ -262,7 +262,6 @@ function isDateInRange(date, startDate, endDate){
   startDate.setSeconds(0);
   startDate.setMilliseconds(0);
 
-
   endDate.setHours(23);
   endDate.setMinutes(59);
   endDate.setSeconds(59);

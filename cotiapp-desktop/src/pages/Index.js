@@ -82,6 +82,25 @@ const Index = () => {
       setDispCoti('');
       setDispTicket('hidden');
     }
+
+    const mostrarTickets = ()=>{
+      if(usuario.tickets)
+        return <CrearTicket display={dispTicket}/>
+      else
+        return <div className={'div-crear-cotizacion-main '+dispTicket}>
+          <h3 style={{marginTop: '70px', marginBottom: '70px'}}>No tienes permisos para crear Tickets</h3>
+        </div>
+
+    }
+
+    const mostrarCotizaciones = ()=>{
+      if(usuario.cotizaciones)
+        return <CrearCotizacion display={dispCoti}/>
+      else  
+        return <div className={'div-crear-cotizacion-main '+dispCoti}>
+          <h3 style={{marginTop: '70px', marginBottom: '70px'}}>No tienes permisos para crear Cotizaciones</h3>
+        </div>
+    }
     
     if(usuario._id === undefined){
       return <Loading/>
@@ -117,8 +136,8 @@ const Index = () => {
               <button className={'btn-index btn-index-left '+classBtnC} onClick={cambiarCoti}>Cotización</button>
                 <button className={'btn-index btn-index-right '+classBtnT} onClick={cambiarTicket}>Ticket</button>
               </div>
-              <CrearCotizacion display={dispCoti}/>
-              <CrearTicket display={dispTicket}/>
+              {mostrarCotizaciones()}
+              {mostrarTickets()}
 
             </div>
 
