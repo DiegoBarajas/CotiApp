@@ -16,6 +16,16 @@ const EditarOtroUsuario = () => {
     const [moderador, setModerador] = useState(false);
     const [cotizaciones, setCotizaciones] = useState(false);
     const [tickets, setTickets] = useState(false);
+    const [yop, setYop] = useState({});
+
+    useEffect(()=>{
+      const getYop = async()=>{
+        const {data} = await axios.get(backend()+'/api/usuario/'+localStorage.getItem('id'));
+        setYop(data);
+      }
+
+      if(yop._id === undefined) getYop();
+    })
 
     useEffect(()=>{
       const getUsuario = async()=>{
@@ -106,6 +116,33 @@ const EditarOtroUsuario = () => {
       await axios.delete(backend()+'/api/usuario/'+id);
       window.location.reload();
     }
+
+    const btnDesactivar = ()=>{
+      if(yop.admin) 
+        return <input
+              className='boton1 btn-editar-empresa-cancelar'
+              type='reset'
+              value={activoOInactivo()}
+
+              onClick={desactivarUsuario}
+          />
+    }
+
+    const mostratAdmin = ()=>{
+      if(yop.admin) 
+        return <div className='div-checkbox-item'>
+                <Label>Administrador</Label>
+                  <input
+                      className='cb'
+                      type='checkbox'
+                      id='admin'
+
+                      checked={admin}                          
+                      onChange={changeCheckBox}
+
+                  />
+                </div>
+    }
     
     if(usuario._id === undefined) return <Loading/>
     else
@@ -182,18 +219,7 @@ const EditarOtroUsuario = () => {
               <br/>
 
               <div className='div-checkbox-agregar-usuario'>
-                  <div className='div-checkbox-item'>
-                      <Label>Administrador</Label>
-                      <input
-                          className='cb'
-                          type='checkbox'
-                          id='admin'
-
-                          checked={admin}                          
-                          onChange={changeCheckBox}
-
-                      />
-                  </div>
+                      {mostratAdmin()}
 
                   <div className='div-checkbox-item'>
                       <Label>Moderador</Label>
@@ -247,13 +273,7 @@ const EditarOtroUsuario = () => {
                   
                   <br/> 
                   
-                  <input
-                      className='boton1 btn-editar-empresa-cancelar'
-                      type='reset'
-                      value={activoOInactivo()}
-      
-                      onClick={desactivarUsuario}
-                  />
+                  {btnDesactivar()}
       
       
               <br/>

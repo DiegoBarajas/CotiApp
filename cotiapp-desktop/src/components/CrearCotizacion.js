@@ -487,7 +487,7 @@ const CrearCotizacion = ({display}) => {
                     </div>
 
                     <div className='div-input-cotizacion'>
-                        <Label>Footer del ticket/cotización:</Label>
+                        <Label>Footer de la cotización (Parte de hasta abajo del documento):</Label>
                         <textarea
                             className='text-area-cotizacion'
                             value={cotizacion.footer}

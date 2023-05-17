@@ -8,10 +8,10 @@ import BarLoader from "react-spinners/PacmanLoader";
 
 import '../styles/CrearCotizacion.css'
 
-import imgPlantillaCotizacion1 from '../assets/plantilla-cotizacion-1.jpg';
-import imgPlantillaCotizacion2 from '../assets/plantilla-cotizacion-2.jpg';
-import imgPlantillaCotizacion3 from '../assets/plantilla-cotizacion-3.jpg';
-import imgPlantillaCotizacion4 from '../assets/plantilla-cotizacion-4.jpg';
+import imgPlantillaCotizacion1 from '../assets/plantilla-ticket-1.jpg';
+import imgPlantillaCotizacion2 from '../assets/plantilla-ticket-2.jpg';
+import imgPlantillaCotizacion3 from '../assets/plantilla-ticket-3.jpg';
+import imgPlantillaCotizacion4 from '../assets/plantilla-ticket-4.jpg';
 
 const items = [{}];
 
@@ -507,7 +507,7 @@ const CrearTicket = ({display}) => {
                     </div>
 
                     <div className='div-input-cotizacion'>
-                        <Label>Footer del ticket/cotización:</Label>
+                        <Label>Footer del ticket (Parte de hasta abajo del documento):</Label>
                         <textarea
                             className='text-area-cotizacion'
                             value={cotizacion.footer}
@@ -533,7 +533,7 @@ const CrearTicket = ({display}) => {
                     </div>
 
                     <br/>
-                    <Label>Seleccione la plantilla de la cotización:</Label>
+                    <Label>Seleccione la plantilla del ticket:</Label>
 
                     <div className='div-radio-cotizacion'>
 
