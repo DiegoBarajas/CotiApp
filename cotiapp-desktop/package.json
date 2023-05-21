@@ -1,6 +1,6 @@
 {
   "name": "cotiapp",
-  "version": "BETA 0.1.6",
+  "version": "1.0",
   "author": "CotiApp",
   "description": "Software para realización, almacenamiento y distribución de cotizaciones y recibos de compra",
   "private": true,

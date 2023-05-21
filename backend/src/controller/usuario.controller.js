@@ -169,6 +169,7 @@ ctrl.eliminar = async(req, res)=>{
 //Reiniciar contraseña
 ctrl.reiniciarPassword = async(req, res)=>{
     const id = req.params.id;
+    
     pass = generarPass(8)
     passwrd = await bcrypt.hash(pass, 10);
     const usuario = await Usuario.findByIdAndUpdate(id, { 
