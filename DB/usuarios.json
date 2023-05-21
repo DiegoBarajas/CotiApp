@@ -1,0 +1,484 @@
+[{
+  "_id": {
+    "$oid": "63ee402b3256cbf5f3614318"
+  },
+  "nombre": "Diego",
+  "apellido": "Barajas",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "desaubv@gmail.com",
+  "telefono": "3313993250",
+  "password": "$2a$10$xBDl0OPk5af64FH82SSpsuj/kElpDX0jUnGQ10vkvJhaLkLfkGtKy",
+  "dios": true,
+  "admin": true,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-02-16T14:39:39.321Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T02:00:09.649Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3fcac6fe102c57c0ef13f"
+  },
+  "nombre": "Jorge Alejandro",
+  "apellido": "Ozuna Salazar",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "jorge.ozuna7706@alumnos.udg.mx",
+  "telefono": "1234567890",
+  "password": "$2a$10$qnpKi2p48gG7CdHRs7QmHev15PhbvlMOQics01pKMKDqjX8M6gem6",
+  "dios": true,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-02-20T23:05:16.128Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T06:34:08.166Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f58eec574f117150f6bfab"
+  },
+  "nombre": "Esaú",
+  "apellido": "Vélez",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "desaubv@hotmail.com",
+  "telefono": "3313993250",
+  "password": "$2a$10$/5tsl53EGzTu7isr8Q.z2.0xODa5DSxzdxxAGIQmw1WtLQGU/W4Ri",
+  "dios": false,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": false,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-02-22T03:41:32.157Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T14:52:05.438Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f58f0f574f117150f6c214"
+  },
+  "nombre": "Adalberto",
+  "apellido": "Jimenez",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "desaubv2@gmail.com",
+  "telefono": "3313993250",
+  "password": "$2a$10$CSWeVJjksCrLbNmkvDit1.9er4YtjKeKt.GfjzA8LANp2AbQLylHK",
+  "dios": false,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-02-22T03:42:07.176Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-15T14:28:59.731Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f63af227f4d88feccdc4c2"
+  },
+  "nombre": "Liz",
+  "apellido": "Velazquez",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "velazquezlizeth49@gmail.com",
+  "telefono": "3326150831",
+  "password": "$2a$10$pDnfyHycFU0SgghQhFBj1.o7do7508CXya6r6e0NjQvZgtfNBeCx.",
+  "dios": false,
+  "admin": true,
+  "moderador": false,
+  "cotizaciones": false,
+  "tickets": false,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-02-22T15:55:30.533Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T14:49:37.238Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640224b285968c13f13f365a"
+  },
+  "nombre": "Juanito",
+  "apellido": "Perez Lopez",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "asdasd@dsad.asd",
+  "telefono": "84548454",
+  "password": "$2a$10$FmN4mtLrVaEWG2TOHudcLuRGpj6mgCrtnaliI4M5P3ynjJaWwUdRW",
+  "dios": true,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": false,
+  "tickets": false,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-03T16:47:46.457Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T14:49:37.238Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6408d6bbfbab4dbf2859ce92"
+  },
+  "nombre": "Diego",
+  "apellido": "Barajas",
+  "id_empresa": "6408c321fbab4dbf28578210",
+  "correo": "diego@chipsi.com",
+  "telefono": "3313993250",
+  "password": "$2a$10$6MPk1R1O4eMUH35SolvRBOZ0PkWgA3GwCvRbRsJYXe3Ha5dgfWM3y",
+  "dios": true,
+  "admin": true,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-08T18:40:59.202Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T19:33:16.391Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6443ec2d537b8cb035b17afe"
+  },
+  "nombre": "pozole",
+  "apellido": "paerla",
+  "id_empresa": "641ec2b28adb7183c9200587",
+  "correo": "tadeo34rq34ff@gmail.com",
+  "telefono": "33400982634",
+  "password": "$2a$10$cxqsADqpQ5mN7FB6vh9LPufGUe4TxDRccpWkoXrzmwJCzYcW3gW/W",
+  "dios": false,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-04-22T14:16:13.820Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T21:16:39.289Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645cfe87766533feb4fa0a45"
+  },
+  "nombre": "Oscar",
+  "apellido": "Coss",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "correaxxo@gmail.com",
+  "telefono": "123456789",
+  "password": "$2a$10$eTCOlQu75WsW.UP/6l6fBufxxEUNS.WW9lM0hy.ie9fAGRlLAdbdu",
+  "dios": false,
+  "admin": true,
+  "moderador": true,
+  "cotizaciones": false,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T14:41:11.232Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T14:49:37.238Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645cff05f48ca43af28c2eed"
+  },
+  "nombre": "Diego",
+  "apellido": "Vargas",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "asdfghjkl@gmail.com",
+  "telefono": "1234567890",
+  "password": "$2a$10$9wKIX5xbA5F9wmj8O2pPqeggS5otO3cLxFHaD.qhIPDSNQAl1MtpK",
+  "dios": false,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": false,
+  "tickets": false,
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-05-11T14:43:17.030Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-12T11:32:37.851Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d030105c43def7cd4cd9c"
+  },
+  "nombre": "Oscar",
+  "apellido": "Ramos",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "qwertyuiop@hmail.com",
+  "telefono": "0987654321",
+  "password": "$2a$10$Q4.eZbbErOM8d197nIivgO19meqwxmR16VNh8pDl8AMzGR0eBmuFi",
+  "dios": true,
+  "admin": true,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T15:00:18.010Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T21:46:01.572Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1e51473c177978fdc474"
+  },
+  "nombre": "TRIYAN",
+  "apellido": "SALAZAR",
+  "id_empresa": "645d1da9473c177978fdc2a8",
+  "correo": "triyansalazar33@gmail.com",
+  "telefono": "3328003955",
+  "password": "$2a$10$rJ/cfL/Pz27eWsfP6quqA.MYyzljmM0p8REcwQZir/xhcZ3eEcrL2",
+  "dios": true,
+  "admin": true,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-05-11T16:56:49.777Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T15:24:45.064Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1ecc473c177978fdc528"
+  },
+  "nombre": "TRIYAN",
+  "apellido": "SALAZAR",
+  "id_empresa": "645d1da9473c177978fdc2a8",
+  "correo": "triyansalazar@gmail.com",
+  "telefono": "33923804920930",
+  "password": "$2a$10$jyMPI6zT80b8Ik4YsFboievb2UDRe/WXZfGBVs3xjO149duffHEOm",
+  "dios": false,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": false,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:58:52.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T19:07:29.423Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6460f6efc248f332e9fbe0ef"
+  },
+  "nombre": "Jorge",
+  "apellido": "Ozuna",
+  "id_empresa": "645e4f1d12de78b01c5b833e",
+  "correo": "ASDFG@DFGHJ.LK",
+  "telefono": "123456789",
+  "password": "$2a$10$eEI88H5zNDWHKns7k71ApOk02F3RZoLKaVQEZffpt8iFuSffac3Oy",
+  "dios": false,
+  "admin": true,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-14T14:57:51.976Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T00:54:55.567Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6466c900780bd5eaa20c333c"
+  },
+  "nombre": "Perla",
+  "apellido": "Moran",
+  "id_empresa": "645e4f1d12de78b01c5b833e",
+  "correo": "Perlamora@gmail.com",
+  "telefono": "93023",
+  "password": "$2a$10$KhYltj8fH6Gag.76Dixvq.O9muDNjMGuuKdqemP3xvW2bfiXHv2Q2",
+  "dios": false,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": false,
+  "tickets": false,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T00:55:28.267Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T00:55:28.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6466c91b780bd5eaa20c33bf"
+  },
+  "nombre": "Diego",
+  "apellido": "Barajas",
+  "id_empresa": "645e4f1d12de78b01c5b833e",
+  "correo": "diegoBara@gmail.com",
+  "telefono": "2304932",
+  "password": "$2a$10$8Pi6zjJGk1cQ./suJyCfMO9yMxTZ3siAZnO4cvlEo9/ApDVAHCXO2",
+  "dios": false,
+  "admin": true,
+  "moderador": false,
+  "cotizaciones": false,
+  "tickets": false,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T00:55:55.553Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T00:55:55.553Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64670d8e1e6dd556d444a59e"
+  },
+  "nombre": "Martin",
+  "apellido": "Morua",
+  "id_empresa": "63eadc4936b3d0e72a66329f",
+  "correo": "martinezmoria@gmail.com",
+  "telefono": "830039",
+  "password": "$2a$10$PlTshlPjAx/5q47cfTsr5eA/Skb8obgtqze4JGKNTkm04rQ4DhJFu",
+  "dios": false,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T05:47:58.488Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T05:47:58.488Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64675e18e82efa3811fd714c"
+  },
+  "nombre": "Juan Carlos",
+  "apellido": "Lopez",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "correo": "admin@correo.com",
+  "telefono": "3312128990",
+  "password": "$2a$10$HL4N2mgPDPkD9OlRh10oNuSTefFqp8mItlYH1hPRFN77J0lqxvlCW",
+  "dios": false,
+  "admin": true,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:31:36.568Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T11:36:54.588Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64675e5de82efa3811fd756e"
+  },
+  "nombre": "Luis Francisco",
+  "apellido": "Perez",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "correo": "moderador@correo.com",
+  "telefono": "3308312515",
+  "password": "$2a$10$46S4kRYoy19NOfn2AwQD5OWNDXGYtHwlXAThq209KIE0OvbHq6Atm",
+  "dios": false,
+  "admin": false,
+  "moderador": true,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:32:45.036Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:23:56.862Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64675e87e82efa3811fd77e2"
+  },
+  "nombre": "Maria Laura",
+  "apellido": "Ortega",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "correo": "usuario@correo.com",
+  "telefono": "3342506676",
+  "password": "$2a$10$Zm/rpbt2HRRp4ifG5oAhB.WUaLgI.c1mhpNa6It2fF.BshQ5L3yBG",
+  "dios": false,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:33:27.703Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T11:35:54.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467be7f5e555fc20afb34f4"
+  },
+  "nombre": "asdfghj",
+  "apellido": "qwertyu",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "correo": "qwert@qwer.qwe",
+  "telefono": "123456789",
+  "password": "$2a$10$JZ0Hc96BgHj1nZDXFD8tr.kqbd46jaZtvEoq5yUjyQK.Vq9zL8lRO",
+  "dios": false,
+  "admin": false,
+  "moderador": false,
+  "cotizaciones": true,
+  "tickets": true,
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T18:22:55.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:22:55.881Z"
+  },
+  "__v": 0
+}]

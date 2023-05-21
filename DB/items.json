@@ -1,0 +1,609 @@
+[{
+  "_id": {
+    "$oid": "644fa7fee82efa3811fdb26e"
+  },
+  "id_doc": "644fa7fee82efa3811fdb269",
+  "cantidad": 1,
+  "unidad": "UNID",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 12,
+  "importe": 12,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-01T11:52:30.912Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:52:30.912Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa7fee82efa3811fdb26f"
+  },
+  "id_doc": "644fa7fee82efa3811fdb269",
+  "cantidad": 6,
+  "unidad": "UNID",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 90,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-01T11:52:30.912Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:52:30.912Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa847e82efa3811fdb397"
+  },
+  "id_doc": "644fa847e82efa3811fdb392",
+  "cantidad": 10,
+  "unidad": "UNID",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 11,
+  "importe": 110,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-01T11:53:43.774Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:53:43.774Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa88ee82efa3811fdb6a7"
+  },
+  "id_doc": "644fa88ee82efa3811fdb6a2",
+  "cantidad": 20,
+  "unidad": "UNID",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 300,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa88ee82efa3811fdb6a8"
+  },
+  "id_doc": "644fa88ee82efa3811fdb6a2",
+  "cantidad": 20,
+  "unidad": "UNID",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 8,
+  "importe": 160,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa88ee82efa3811fdb6a9"
+  },
+  "id_doc": "644fa88ee82efa3811fdb6a2",
+  "cantidad": 20,
+  "unidad": "UNID",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 12,
+  "importe": 240,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:54:54.494Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa921e82efa3811fdb9ce"
+  },
+  "id_doc": "644fa921e82efa3811fdb9c8",
+  "cantidad": 1,
+  "unidad": "DOCEN",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 12,
+  "importe": 12,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-01T11:57:21.439Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:57:21.439Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fa921e82efa3811fdb9cd"
+  },
+  "id_doc": "644fa921e82efa3811fdb9c8",
+  "cantidad": 6,
+  "unidad": "UNID",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 9,
+  "importe": 54,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-01T11:57:21.439Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:57:21.439Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b877fe82efa3811fdc521"
+  },
+  "id_doc": "645b877ee82efa3811fdc51b",
+  "cantidad": 3,
+  "unidad": "UNID",
+  "articulo": "Cazuela de tamarindo",
+  "descripcion": "Color: Roja",
+  "precioUnitario": 15,
+  "importe": 45,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-10T12:01:03.083Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:01:03.083Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b880be82efa3811fdcc7b"
+  },
+  "id_doc": "645b880be82efa3811fdcc74",
+  "cantidad": 6,
+  "unidad": "DOCEN",
+  "articulo": "Kinder Delice",
+  "descripcion": "Paquetes pequeños",
+  "precioUnitario": 250,
+  "importe": 1500,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b880be82efa3811fdcc7a"
+  },
+  "id_doc": "645b880be82efa3811fdcc74",
+  "cantidad": 7,
+  "unidad": "DOCEN",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 100,
+  "importe": 700,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b880be82efa3811fdcc79"
+  },
+  "id_doc": "645b880be82efa3811fdcc74",
+  "cantidad": 3,
+  "unidad": "DOCEN",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 78,
+  "importe": 234,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:03:23.302Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b8894e82efa3811fdcdf9"
+  },
+  "id_doc": "645b8893e82efa3811fdcdf3",
+  "cantidad": 1,
+  "unidad": "UNID",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 15,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:05:40.029Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:05:40.029Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b88abe82efa3811fdcf51"
+  },
+  "id_doc": "645b88abe82efa3811fdcf4c",
+  "cantidad": 4,
+  "unidad": "UNID",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 60,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:06:03.523Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:06:03.523Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b88cce82efa3811fdd155"
+  },
+  "id_doc": "645b88cce82efa3811fdd150",
+  "cantidad": 6,
+  "unidad": "UNID",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 90,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-10T12:06:36.800Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:06:36.800Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c5c2e82efa3811fdd727"
+  },
+  "id_doc": "6464c5c2e82efa3811fdd722",
+  "cantidad": 4,
+  "unidad": "UNID",
+  "articulo": "Cazuela de tamarindo",
+  "descripcion": "Color: Verde",
+  "precioUnitario": 19,
+  "importe": 76,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-17T12:17:06.312Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:17:06.312Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c5dce82efa3811fdd87e"
+  },
+  "id_doc": "6464c5dce82efa3811fdd879",
+  "cantidad": 2,
+  "unidad": "BOLSA",
+  "articulo": "Paleta de la rosa",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 39,
+  "importe": 78,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-17T12:17:32.780Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:17:32.780Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c5fbe82efa3811fdda6a"
+  },
+  "id_doc": "6464c5fbe82efa3811fdda64",
+  "cantidad": 5,
+  "unidad": "Bolsa",
+  "articulo": "Paleta de la rosa",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 39,
+  "importe": 195,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-17T12:18:03.183Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:18:03.183Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c649e82efa3811fdded1"
+  },
+  "id_doc": "6464c648e82efa3811fddecb",
+  "cantidad": 2,
+  "unidad": "UNID",
+  "articulo": "Palanqueta",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 11,
+  "importe": 22,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-17T12:19:21.195Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:19:21.195Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646790b4927a63c68c6c8af1"
+  },
+  "id_doc": "646790b3927a63c68c6c8aec",
+  "cantidad": 1,
+  "unidad": "PZ",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 8,
+  "importe": 8,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T15:07:32.035Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T15:07:32.035Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646790c7927a63c68c6c8bdd"
+  },
+  "id_doc": "646790c7927a63c68c6c8bd8",
+  "cantidad": 3,
+  "unidad": "PZ",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 15,
+  "importe": 45,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T15:07:51.970Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T15:07:51.970Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64679127927a63c68c6c8dc8"
+  },
+  "id_doc": "64679127927a63c68c6c8dc4",
+  "cantidad": 8,
+  "unidad": "BOLSA",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 150,
+  "importe": 1200,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-19T15:09:27.512Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T15:09:27.512Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64679564927a63c68c6c8f97"
+  },
+  "id_doc": "64679564927a63c68c6c8f92",
+  "cantidad": 4,
+  "unidad": "PZ",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 12,
+  "importe": 48,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T15:27:32.758Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T15:27:32.758Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64679fbc927a63c68c6ca31c"
+  },
+  "id_doc": "64679fbc927a63c68c6ca317",
+  "cantidad": 1,
+  "unidad": "PZ",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 10,
+  "importe": 10,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T16:11:40.802Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T16:11:40.802Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467b0c55e555fc20afb27ca"
+  },
+  "id_doc": "6467b0c55e555fc20afb27c5",
+  "cantidad": 1,
+  "unidad": "PZ",
+  "articulo": "Chocolate",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 12,
+  "importe": 12,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T17:24:21.213Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T17:24:21.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467ba395e555fc20afb2d02"
+  },
+  "id_doc": "6467ba395e555fc20afb2cfd",
+  "cantidad": 2,
+  "unidad": "UNID",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 10,
+  "importe": 20,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-19T18:04:41.453Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:04:41.453Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467bd535e555fc20afb3349"
+  },
+  "id_doc": "6467bd535e555fc20afb3345",
+  "cantidad": 1,
+  "unidad": "PZ",
+  "articulo": "Chocolate",
+  "descripcion": "Ibarra",
+  "precioUnitario": 12,
+  "importe": 12,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-19T18:17:55.696Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:17:55.696Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467bd535e555fc20afb334a"
+  },
+  "id_doc": "6467bd535e555fc20afb3345",
+  "cantidad": 3,
+  "unidad": "BOLSA",
+  "articulo": "Paleta de la rosa",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 40,
+  "importe": 120,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-19T18:17:55.697Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:17:55.697Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467be065e555fc20afb338d"
+  },
+  "id_doc": "6467be065e555fc20afb338a",
+  "cantidad": 1,
+  "unidad": "1",
+  "articulo": "1",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 0,
+  "importe": 0,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T18:20:54.301Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:20:54.301Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467c60d90ac3ea3f569e98b"
+  },
+  "id_doc": "6467c60d90ac3ea3f569e985",
+  "cantidad": 1,
+  "unidad": "UNID",
+  "articulo": "Mazapan",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 10,
+  "importe": 10,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T18:55:09.652Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:55:09.652Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467cd99f168b31b14d51289"
+  },
+  "id_doc": "6467cd98f168b31b14d51284",
+  "cantidad": 1,
+  "unidad": "pz",
+  "articulo": "uito",
+  "descripcion": "Sin descripción",
+  "precioUnitario": 30,
+  "importe": 30,
+  "tipo": "cotizacion",
+  "createdAt": {
+    "$date": "2023-05-19T19:27:21.194Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T19:27:21.194Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467cecdf168b31b14d51a46"
+  },
+  "id_doc": "6467cecdf168b31b14d51a41",
+  "cantidad": 1,
+  "unidad": "pz",
+  "articulo": "lentes",
+  "descripcion": "lentes full hd",
+  "precioUnitario": 1000,
+  "importe": 1000,
+  "tipo": "ticket",
+  "createdAt": {
+    "$date": "2023-05-19T19:32:29.237Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T19:32:29.237Z"
+  },
+  "__v": 0
+}]

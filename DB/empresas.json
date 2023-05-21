@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "63eadc4936b3d0e72a66329f"
+  },
+  "nombre": "CotiApp",
+  "correo": "cotiapp@hotmail.com",
+  "telefono": "3330448142",
+  "pagina": "https://chipsi.mx",
+  "direccion": "Av. Cristóbal Colón #1487, Colonia Morelos, 44910, Guadalajara, Jalisco",
+  "folio_coti": 2,
+  "folio_ticket": 2,
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección cotiapp@hotmail.com",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1678295478/empresas/1678295476818.png",
+  "createdAt": {
+    "$date": "2023-02-14T00:56:41.913Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T14:41:05.403Z"
+  },
+  "__v": 0,
+  "footer": "Sin más por el momento me despido, Cualquier duda o aclaración y en espera de una respuesta favorable a\r\nnuestra cotización. Quedo a sus órdenes.",
+  "color": "#004368",
+  "activo": true
+},{
+  "_id": {
+    "$oid": "6408c321fbab4dbf28578210"
+  },
+  "nombre": "Chipsi",
+  "correo": "hola@chipsi.com",
+  "telefono": "3339485139",
+  "pagina": "https://chipsi.vercel.app",
+  "direccion": "C. Josefa Ortiz de Domínguez 999, Las Huertas, 44739 Guadalajara, Jal.",
+  "folio_coti": 3,
+  "folio_ticket": 3,
+  "condiciones": "Cond 1\r\ncond 2\r\ncond 3",
+  "footer": "Gracias :)",
+  "color": "#2e413c",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1678295842/empresas/1678295841315.png",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-08T17:17:21.957Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T19:36:48.936Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641ec2b28adb7183c9200587"
+  },
+  "nombre": "Diego's SA de CV",
+  "correo": "prime@diegosacv.com",
+  "telefono": "3325260278",
+  "pagina": "https://www.algo.com.mx",
+  "direccion": "Av. Calle falsa 123, Fancia, Perú",
+  "folio_coti": 12,
+  "folio_ticket": 0,
+  "condiciones": "Sisisi",
+  "footer": "Blu blu blu",
+  "color": "#f50000",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1679737521/empresas/1679737521347.ico",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-25T09:45:22.602Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-16T21:16:39.289Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1da9473c177978fdc2a8"
+  },
+  "nombre": "Cuchis Corp SA de CV",
+  "correo": "triyansalazar33@gmail.com",
+  "telefono": "33288003955",
+  "pagina": "https://www.youtube.com/watch?v=CMyu2H56DBk",
+  "direccion": "Velino M Presa #3434, CP 44810, Col. San Andres",
+  "folio_coti": 8859,
+  "folio_ticket": 8859,
+  "condiciones": "COMPRAAAA",
+  "footer": "Muchas Gracias por elegir a CUCHIS CORP SA de CV, con tu ayuda estamos un paso mas cerca a la dominación total del mundo :D",
+  "color": "#a600ff",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1683824040/empresas/1683824039944.gif",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:54:01.986Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T19:02:14.957Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645e4f1d12de78b01c5b833e"
+  },
+  "nombre": "Empresa",
+  "correo": "empresa@coreo.corp",
+  "telefono": "1234567890",
+  "pagina": "https://empresa.com",
+  "direccion": "Av. Empresarial, #empresa",
+  "folio_coti": 2,
+  "folio_ticket": 1,
+  "condiciones": "Condiciones",
+  "footer": "Footer",
+  "color": "#ff0000",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1683902234/empresas/1683902236282.png",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-12T14:37:17.248Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-18T22:29:21.799Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64675de0e82efa3811fd6e0f"
+  },
+  "nombre": "Compañia Fantasma",
+  "correo": "company@company.com",
+  "telefono": "33224565",
+  "pagina": "https://compañia.com",
+  "direccion": "Av. Compañia #123, Colonia Empresarial, Islas Caiman",
+  "folio_coti": 14,
+  "folio_ticket": 13,
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "footer": "Muchas gracias",
+  "color": "#97cb2d",
+  "img": "http://res.cloudinary.com/dnrfswnwp/image/upload/v1684495840/empresas/1684495839814.jpg",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:30:40.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T19:32:29.124Z"
+  },
+  "__v": 0
+}]

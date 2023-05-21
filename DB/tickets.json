@@ -1,0 +1,325 @@
+[{
+  "_id": {
+    "$oid": "644fa88ee82efa3811fdb6a2"
+  },
+  "id_usuario": "64675e18e82efa3811fd714c",
+  "id_cliente": "64676101e82efa3811fd9606",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "1",
+  "fecha": "1/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 700,
+  "iva": 16,
+  "importeIva": 112,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 812,
+  "footer": "Muchas gracias",
+  "plantilla": 3,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-01T11:54:54.337Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-01T11:54:54.337Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b880be82efa3811fdcc74"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "id_cliente": "645b871de82efa3811fdc00b",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "2",
+  "fecha": "10/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 2434,
+  "iva": 16,
+  "importeIva": 389.44,
+  "descuento": 0,
+  "adicional": 49,
+  "total": 2872.44,
+  "footer": "NOTA: Importe adicional de $50.00 MXN por envio.\nMuchas gracias",
+  "plantilla": 1,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-10T12:03:23.137Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:03:23.137Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b8893e82efa3811fdcdf3"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "id_cliente": "645b8743e82efa3811fdc21c",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "3",
+  "fecha": "10/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 15,
+  "iva": 16,
+  "importeIva": 2.4,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 17.4,
+  "footer": "Muchas gracias",
+  "plantilla": 4,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-10T12:05:39.886Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:05:39.886Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b88abe82efa3811fdcf4c"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "id_cliente": "645b86f0e82efa3811fdbdbb",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "4",
+  "fecha": "10/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 60,
+  "iva": 16,
+  "importeIva": 9.6,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 69.6,
+  "footer": "Muchas gracias",
+  "plantilla": 1,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-10T12:06:03.376Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:06:03.376Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b88cce82efa3811fdd150"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "id_cliente": "645b8743e82efa3811fdc21c",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "5",
+  "fecha": "10/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 90,
+  "iva": 16,
+  "importeIva": 14.4,
+  "descuento": 0,
+  "adicional": 50,
+  "total": 154.4,
+  "footer": "Muchas gracias",
+  "plantilla": 3,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-10T12:06:36.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:06:36.662Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c5dce82efa3811fdd879"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "6",
+  "fecha": "17/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 78,
+  "iva": 16,
+  "importeIva": 12.48,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 90.48,
+  "footer": "Muchas gracias",
+  "plantilla": 4,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-17T12:17:32.633Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:17:32.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c5fbe82efa3811fdda64"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "7",
+  "fecha": "17/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 195,
+  "iva": 16,
+  "importeIva": 31.2,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 226.2,
+  "footer": "Muchas gracias",
+  "plantilla": 1,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-17T12:18:03.020Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:18:03.020Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c648e82efa3811fddecb"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "8",
+  "fecha": "17/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 22,
+  "iva": 16,
+  "importeIva": 3.52,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 25.52,
+  "footer": "Muchas gracias",
+  "plantilla": 3,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-17T12:19:20.975Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:19:20.975Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64679127927a63c68c6c8dc4"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "9",
+  "fecha": "19/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 1200,
+  "iva": 16,
+  "importeIva": 192,
+  "descuento": 40,
+  "adicional": 0,
+  "total": 1352,
+  "footer": "Muchas gracias",
+  "plantilla": 2,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-19T15:09:27.245Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T15:09:27.245Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467ba395e555fc20afb2cfd"
+  },
+  "id_usuario": "64675e18e82efa3811fd714c",
+  "id_cliente": "6467614ee82efa3811fd9b1e",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "10",
+  "fecha": "19/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 20,
+  "iva": 16,
+  "importeIva": 3.2,
+  "descuento": 0,
+  "adicional": 0,
+  "total": 23.2,
+  "footer": "Muchas gracias",
+  "plantilla": 4,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-19T18:04:41.082Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:04:41.082Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467bd535e555fc20afb3345"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#97cb2d",
+  "folio": "11",
+  "fecha": "19/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 132,
+  "iva": 16,
+  "importeIva": 21.12,
+  "descuento": 0,
+  "adicional": 30,
+  "total": 183.12,
+  "footer": "Muchas gracias",
+  "plantilla": 3,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-19T18:17:55.152Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T18:17:55.152Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467cecdf168b31b14d51a41"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "id_cliente": "6464c589e82efa3811fdd407",
+  "id_empresa": "64675de0e82efa3811fd6e0f",
+  "color": "#eeff00",
+  "folio": "12",
+  "fecha": "19/5/2023",
+  "condiciones": "El servicio se paga de manera mensual.\r\nPuedes adelantar meses.\r\nEl pago tiene que ser con tarjeta o tranferencia.\r\nEn caso de dudas o aclaraciones favor de mandar un correo a la dirección company@company.com",
+  "subtotal": 1000,
+  "iva": 20,
+  "importeIva": 200,
+  "descuento": 10,
+  "adicional": 50,
+  "total": 1240,
+  "footer": "Muchas gracias",
+  "plantilla": 3,
+  "pago": "Efectivo",
+  "createdAt": {
+    "$date": "2023-05-19T19:32:29.019Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T19:32:29.019Z"
+  },
+  "__v": 0
+}]

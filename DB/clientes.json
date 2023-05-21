@@ -1,0 +1,732 @@
+[{
+  "_id": {
+    "$oid": "640886be8315a63282d8d463"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "a",
+  "empresa": "a",
+  "correo": "a@a",
+  "telefono": "78789",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-08T12:59:42.903Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-08T13:03:40.534Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640887e08315a63282d8e523"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "4",
+  "empresa": "4",
+  "correo": "4@ada.da",
+  "telefono": "4545",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-08T13:04:32.405Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-08T13:17:36.501Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6408d5e8fbab4dbf2859b962"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Ricardo Gomez",
+  "empresa": "Fruteria San Luis",
+  "correo": "fruta@gmail.com",
+  "telefono": "3312526636",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-08T18:37:28.242Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-08T18:38:45.002Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6408d6e5fbab4dbf2859d2d2"
+  },
+  "id_usuario": "6408d6bbfbab4dbf2859ce92",
+  "nombre": "Juan Perez",
+  "empresa": "Juanes SA de CV",
+  "correo": "juan_perez225@gmail.com",
+  "telefono": "3312123632",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-08T18:41:41.017Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-08T20:39:39.975Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6408f77d4b8012f8d3603cb2"
+  },
+  "id_usuario": "6408d6bbfbab4dbf2859ce92",
+  "nombre": "Jonathan Tapia",
+  "empresa": "AnimalsWithHats",
+  "correo": "jonathan.tapia@animalswithhats.com",
+  "telefono": "12345678",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-08T21:00:45.342Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-08T21:00:45.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640aa59ac0d5889901d40edd"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "jorge ozuna",
+  "empresa": "cotiapp",
+  "correo": "jorge.ozuna7706@alumnos.udg.mx",
+  "telefono": "3328003955",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-10T03:35:54.839Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-10T03:35:54.839Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640c22827014dbce5c8001e2"
+  },
+  "id_usuario": "6408d6bbfbab4dbf2859ce92",
+  "nombre": "hiu",
+  "empresa": "hhuhu",
+  "correo": "uhh@dasd.das",
+  "telefono": "5545",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-11T06:41:06.377Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T06:42:03.953Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640c25547014dbce5c804e45"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Juanito",
+  "empresa": "Jsad ",
+  "correo": "dasd@dasd.asd",
+  "telefono": "4545",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-11T06:53:08.967Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T06:53:13.901Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640caa913c52ab5467013bb7"
+  },
+  "id_usuario": "6408d6bbfbab4dbf2859ce92",
+  "nombre": "q",
+  "empresa": "q",
+  "correo": "ere@f.g",
+  "telefono": "43",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-11T16:21:37.044Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T16:21:43.800Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640cb8e4146e0a79fcb73203"
+  },
+  "id_usuario": "6408d6bbfbab4dbf2859ce92",
+  "nombre": "Liz",
+  "empresa": "Poli",
+  "correo": "liz@gmail.com",
+  "telefono": "1212121212",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-11T17:22:44.364Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T17:22:44.364Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6415268f7bec71162a13f698"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Sergio ddasd",
+  "empresa": "Empresa",
+  "correo": "dmekdjkas@dasd.da",
+  "telefono": "12121212",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-18T02:48:47.927Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-18T02:49:10.354Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641c95e3cfc471236d93d7b9"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Juan Lopez",
+  "empresa": "Empresa",
+  "correo": "cliente@empresa.com",
+  "telefono": "123456789",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-23T18:09:39.390Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T14:45:51.277Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641ca963cfc471236d93dcc8"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "aaaaaaa",
+  "empresa": "asaaaa",
+  "correo": "aaaa@aaaa.aa",
+  "telefono": "123",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-23T19:32:51.898Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T14:45:55.571Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641ca973cfc471236d93dccf"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "wwwwwwwww",
+  "empresa": "wwwww",
+  "correo": "ww@ww.ww",
+  "telefono": "422",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-23T19:33:07.292Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T14:45:59.737Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641ca981cfc471236d93dcd1"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "eeeeeeeeeee",
+  "empresa": "eeeeeeeee",
+  "correo": "eeeeeeeeee@ee.ee",
+  "telefono": "78963",
+  "activo": false,
+  "createdAt": {
+    "$date": "2023-03-23T19:33:21.879Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T14:46:03.790Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64244f53e4715a8ef277bef1"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Jose Clemente",
+  "empresa": "Papas de Occidente",
+  "correo": "jose.clemente@papas.mx",
+  "telefono": "3330448142",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-29T14:46:43.837Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T14:46:43.837Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6427070ace79be30313f7f67"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "zuri vega",
+  "empresa": "poligdl",
+  "correo": "zuri@gmail.com",
+  "telefono": "3322",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-03-31T16:15:06.791Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T16:15:06.791Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645bdcb142bcfbc440d20be8"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "paerla",
+  "empresa": "tortas doñabetty",
+  "correo": "foaierf@hmail.com",
+  "telefono": "3354354454543534",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-10T18:04:33.196Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T18:04:43.890Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d12af473c177978fdb9ce"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "uwfiuefuihiu",
+  "empresa": "oisefoi",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "454353534543524542",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:07:11.296Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:07:11.296Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d133a473c177978fdbbd7"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "kjsnkcj",
+  "empresa": "oewjfowj",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "32490509590",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:09:30.538Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:09:30.538Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1353473c177978fdbc3d"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "jose",
+  "empresa": "si",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "9345050950953",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:09:55.604Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:09:55.604Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1362473c177978fdbc7b"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "maria jose",
+  "empresa": "wid90qwdmxcmn rm fdwe ",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "4359305093095295",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:10:10.061Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:10:10.061Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1373473c177978fdbcc5"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "luis enriqur",
+  "empresa": "ewufowjfjl ",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "255346457568543",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:10:27.314Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:10:27.314Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1388473c177978fdbd1b"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "DIEGO GO GOGO",
+  "empresa": "ODCN CR CJEWV H",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "39489237493749237",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:10:48.266Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:10:48.266Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d13a7473c177978fdbd53"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "YO DE LA CALLE",
+  "empresa": "IENC FEWNFJ EN IN",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "0398409092374023790423",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:11:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:11:19.974Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1425473c177978fdbd55"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "DOÑA VERI",
+  "empresa": "CUCHIS CORP SA DE CV",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "9348203092085390859085989",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:13:25.390Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:13:25.390Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d146c473c177978fdbd57"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "BATI YAGO",
+  "empresa": "BATI CORP",
+  "correo": "minecraftjava17.triya@gmail.com",
+  "telefono": "46466464564575475754754754754",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:14:36.227Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:14:36.227Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d1482473c177978fdbd59"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "siuuuuu",
+  "empresa": "jkncqwecjkw",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "3328003955",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:14:58.615Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:14:58.615Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d14c1473c177978fdbd5e"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "yasssssss",
+  "empresa": "tequilera ",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "382",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:16:01.973Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:16:01.973Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d14d4473c177978fdbd60"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "nefer",
+  "empresa": "furrolandia",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "39204",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:16:20.349Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:16:20.349Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d14ed473c177978fdbd62"
+  },
+  "id_usuario": "63f3fcac6fe102c57c0ef13f",
+  "nombre": "FIFE MARTIIIIIN",
+  "empresa": "FIFEZZZZ PENDEJEZZZZ",
+  "correo": "monarca.veri@gmail.com",
+  "telefono": "8327297",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T16:16:45.291Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:16:45.291Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d3d17e2bdac2f89f3b64a"
+  },
+  "id_usuario": "645d1e51473c177978fdc474",
+  "nombre": "KAREEEEN",
+  "empresa": "pendejolandia",
+  "correo": "ijdfibwe@jienf.com",
+  "telefono": "0374924834823",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-11T19:08:07.831Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T19:08:07.831Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464e4aef2c01fd2d207370f"
+  },
+  "id_usuario": "63ee402b3256cbf5f3614318",
+  "nombre": "Cliente",
+  "empresa": "Empresa del cliente",
+  "correo": "cliente@email.com",
+  "telefono": "1234567890",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-17T14:29:02.715Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T14:29:02.715Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6466a688f6d9ff9ec8b151f7"
+  },
+  "id_usuario": "6460f6efc248f332e9fbe0ef",
+  "nombre": "DAYANA",
+  "empresa": "MC Donal ",
+  "correo": "uybfuabQ@soyprieto.mx",
+  "telefono": "8473820",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-18T22:28:24.120Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-18T22:28:24.120Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64676101e82efa3811fd9606"
+  },
+  "id_usuario": "64675e18e82efa3811fd714c",
+  "nombre": "Victor Manuel Barajas",
+  "empresa": "Halley",
+  "correo": "multi_grafic@hotmail.com",
+  "telefono": "3312129565",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:44:01.451Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T11:44:01.451Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467614ee82efa3811fd9b1e"
+  },
+  "id_usuario": "64675e18e82efa3811fd714c",
+  "nombre": "Luis Miguel Ortega",
+  "empresa": "California S.A de C.V",
+  "correo": "luis.miguel.ortega@california.com",
+  "telefono": "3345890767",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:45:18.778Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T11:45:18.778Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64676180e82efa3811fd9e75"
+  },
+  "id_usuario": "64675e18e82efa3811fd714c",
+  "nombre": "Juana Ranadam",
+  "empresa": "Productos quimicos de occidente",
+  "correo": "juana@quimicos.com",
+  "telefono": "3344552323",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-19T11:46:08.988Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-19T11:46:08.988Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b86f0e82efa3811fdbdbb"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "nombre": "Lizbeth Hernandez",
+  "empresa": "Herland",
+  "correo": "lizther@herland.com",
+  "telefono": "3376890120",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-10T11:58:40.717Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T11:58:40.717Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b871de82efa3811fdc00b"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "nombre": "Pedro Martin Quintero",
+  "empresa": "Muebles Sako",
+  "correo": "perdo.quintero@sako.com",
+  "telefono": "3367899765",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-10T11:59:25.307Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T11:59:25.307Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645b8743e82efa3811fdc21c"
+  },
+  "id_usuario": "64675e5de82efa3811fd756e",
+  "nombre": "Dulce Guzman",
+  "empresa": "Dulcerias Guzman",
+  "correo": "dulce@dulces.com",
+  "telefono": "3345227876",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-10T12:00:03.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T12:00:03.848Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c589e82efa3811fdd407"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "nombre": "Emmanuel",
+  "empresa": "Pizza Clemente",
+  "correo": "aebz@clementes.com",
+  "telefono": "331455165",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-17T12:16:09.009Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:16:09.009Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c619e82efa3811fddbfc"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "nombre": "Jose MIguel Campo",
+  "empresa": "Campos Hoteleria",
+  "correo": "jose@campos.com",
+  "telefono": "3355667788",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-17T12:18:33.695Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:18:33.695Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6464c633e82efa3811fddd7d"
+  },
+  "id_usuario": "64675e87e82efa3811fd77e2",
+  "nombre": "Luis Francisco",
+  "empresa": "Sin Empresa",
+  "correo": "luis@gmail.com",
+  "telefono": "3344556677",
+  "activo": true,
+  "createdAt": {
+    "$date": "2023-05-17T12:18:59.088Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-17T12:18:59.088Z"
+  },
+  "__v": 0
+}]
